@@ -1,0 +1,351 @@
+{
+  "pdf_id": null,
+  "mapping": {
+    "SECTION IX: OTHER INFORMATION": {}
+  },
+  "unmapped": {
+    "SECTION IX: OTHER INFORMATION": [
+      "DEFINITIONS AND ABBREVIATIONS",
+      "CERTAIN CONVENTIONS, USE OF FINANCIAL INFORMATION AND MARKET DATA AND CURRENCY OF PRESENTATION",
+      "NOTICE TO PROSPECTIVE INVESTORS IN THE UNITED STATES",
+      "FORWARD-LOOKING STATEMENTS",
+      "SUMMARY OF THE OFFER DOCUMENT",
+      "THE OFFER",
+      "SUMMARY FINANCIAL STATEMENTS",
+      "GENERAL INFORMATION",
+      "CAPITAL STRUCTURE",
+      "OBJECTS OF THE OFFER",
+      "BASIS FOR THE OFFER PRICE",
+      "STATEMENT OF POSSIBLE SPECIAL TAX BENEFITS",
+      "INDUSTRY OVERVIEW",
+      "OUR BUSINESS",
+      "KEY REGULATIONS AND POLICIES IN INDIA",
+      "HISTORY AND CERTAIN CORPORATE MATTERS",
+      "OUR MANAGEMENT",
+      "OUR GROUP COMPANIES",
+      "DIVIDEND POLICY",
+      "RESTATED FINANCIAL STATEMENTS",
+      "OTHER FINANCIAL INFORMATION",
+      "CAPITALISATION STATEMENT",
+      "FINANCIAL INDEBTEDNESS",
+      "MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATION",
+      "OUTSTANDING LITIGATION AND MATERIAL DEVELOPMENTS",
+      "GOVERNMENT AND OTHER APPROVALS",
+      "OTHER REGULATORY AND STATUTORY DISCLOSURES",
+      "TERMS OF THE OFFER",
+      "OFFER STRUCTURE",
+      "OFFER PROCEDURE",
+      "RESTRICTIONS ON FOREIGN OWNERSHIP OF INDIAN SECURITIES",
+      "MATERIAL CONTRACTS AND DOCUMENTS FOR INSPECTION",
+      "DECLARATION"
+    ]
+  },
+  "trace": {
+    "section_matches": {
+      "SECTION I – GENERAL": {
+        "matched_to": "SECTION IX: OTHER INFORMATION",
+        "score": 1.0
+      },
+      "SECTION II –RISK FACTORS": {
+        "matched_to": "SECTION IX: OTHER INFORMATION",
+        "score": 1.0
+      },
+      "SECTION III – INTRODUCTION": {
+        "matched_to": "SECTION IX: OTHER INFORMATION",
+        "score": 1.0
+      },
+      "SECTION – IV ABOUT OUR COMPANY": {
+        "matched_to": "SECTION IX: OTHER INFORMATION",
+        "score": 1.0
+      },
+      "SECTION V – FINANCIAL INFORMATION": {
+        "matched_to": "SECTION IX: OTHER INFORMATION",
+        "score": 1.0
+      },
+      "SECTION VI – LEGAL AND OTHER INFORMATION": {
+        "matched_to": "SECTION IX: OTHER INFORMATION",
+        "score": 1.0
+      },
+      "SECTION VII – OFFER RELATED INFORMATION": {
+        "matched_to": "SECTION IX: OTHER INFORMATION",
+        "score": 1.0
+      },
+      "SECTION VIII – DESCRIPTION OF EQUITY SHARES AND TERMS OF THE ARTICLES OF ASSOCIATION": {
+        "matched_to": "SECTION IX: OTHER INFORMATION",
+        "score": 1.0
+      },
+      "SECTION IX – OTHER INFORMATION": {
+        "matched_to": "SECTION IX: OTHER INFORMATION",
+        "score": 1.0
+      }
+    },
+    "subsection_scores": {
+      "SECTION IX: OTHER INFORMATION": {
+        "DEFINITIONS AND ABBREVIATIONS": {
+          "best_key": "unmapped",
+          "best_score": 0.0,
+          "scores_by_key": {
+            "material_contracts_documents_inspection": 0.0,
+            "declaration": 0.0
+          }
+        },
+        "CERTAIN CONVENTIONS, USE OF FINANCIAL INFORMATION AND MARKET DATA AND CURRENCY OF PRESENTATION": {
+          "best_key": "unmapped",
+          "best_score": 0.0,
+          "scores_by_key": {
+            "material_contracts_documents_inspection": 0.0,
+            "declaration": 0.0
+          }
+        },
+        "NOTICE TO PROSPECTIVE INVESTORS IN THE UNITED STATES": {
+          "best_key": "unmapped",
+          "best_score": 0.0,
+          "scores_by_key": {
+            "material_contracts_documents_inspection": 0.0,
+            "declaration": 0.0
+          }
+        },
+        "FORWARD-LOOKING STATEMENTS": {
+          "best_key": "unmapped",
+          "best_score": 0.0,
+          "scores_by_key": {
+            "material_contracts_documents_inspection": 0.0,
+            "declaration": 0.0
+          }
+        },
+        "SUMMARY OF THE OFFER DOCUMENT": {
+          "best_key": "unmapped",
+          "best_score": 0.0,
+          "scores_by_key": {
+            "material_contracts_documents_inspection": 0.0,
+            "declaration": 0.0
+          }
+        },
+        "THE OFFER": {
+          "best_key": "unmapped",
+          "best_score": 0.0,
+          "scores_by_key": {
+            "material_contracts_documents_inspection": 0.0,
+            "declaration": 0.0
+          }
+        },
+        "SUMMARY FINANCIAL STATEMENTS": {
+          "best_key": "unmapped",
+          "best_score": 0.0,
+          "scores_by_key": {
+            "material_contracts_documents_inspection": 0.0,
+            "declaration": 0.0
+          }
+        },
+        "GENERAL INFORMATION": {
+          "best_key": "unmapped",
+          "best_score": 0.0,
+          "scores_by_key": {
+            "material_contracts_documents_inspection": 0.0,
+            "declaration": 0.0
+          }
+        },
+        "CAPITAL STRUCTURE": {
+          "best_key": "unmapped",
+          "best_score": 0.0,
+          "scores_by_key": {
+            "material_contracts_documents_inspection": 0.0,
+            "declaration": 0.0
+          }
+        },
+        "OBJECTS OF THE OFFER": {
+          "best_key": "unmapped",
+          "best_score": 0.0,
+          "scores_by_key": {
+            "material_contracts_documents_inspection": 0.0,
+            "declaration": 0.0
+          }
+        },
+        "BASIS FOR THE OFFER PRICE": {
+          "best_key": "unmapped",
+          "best_score": 0.0,
+          "scores_by_key": {
+            "material_contracts_documents_inspection": 0.0,
+            "declaration": 0.0
+          }
+        },
+        "STATEMENT OF POSSIBLE SPECIAL TAX BENEFITS": {
+          "best_key": "unmapped",
+          "best_score": 0.0,
+          "scores_by_key": {
+            "material_contracts_documents_inspection": 0.0,
+            "declaration": 0.0
+          }
+        },
+        "INDUSTRY OVERVIEW": {
+          "best_key": "unmapped",
+          "best_score": 0.0,
+          "scores_by_key": {
+            "material_contracts_documents_inspection": 0.0,
+            "declaration": 0.0
+          }
+        },
+        "OUR BUSINESS": {
+          "best_key": "unmapped",
+          "best_score": 0.0,
+          "scores_by_key": {
+            "material_contracts_documents_inspection": 0.0,
+            "declaration": 0.0
+          }
+        },
+        "KEY REGULATIONS AND POLICIES IN INDIA": {
+          "best_key": "unmapped",
+          "best_score": 0.0,
+          "scores_by_key": {
+            "material_contracts_documents_inspection": 0.0,
+            "declaration": 0.0
+          }
+        },
+        "HISTORY AND CERTAIN CORPORATE MATTERS": {
+          "best_key": "unmapped",
+          "best_score": 0.0,
+          "scores_by_key": {
+            "material_contracts_documents_inspection": 0.0,
+            "declaration": 0.0
+          }
+        },
+        "OUR MANAGEMENT": {
+          "best_key": "unmapped",
+          "best_score": 0.0,
+          "scores_by_key": {
+            "material_contracts_documents_inspection": 0.0,
+            "declaration": 0.0
+          }
+        },
+        "OUR GROUP COMPANIES": {
+          "best_key": "unmapped",
+          "best_score": 0.0,
+          "scores_by_key": {
+            "material_contracts_documents_inspection": 0.0,
+            "declaration": 0.0
+          }
+        },
+        "DIVIDEND POLICY": {
+          "best_key": "unmapped",
+          "best_score": 0.0,
+          "scores_by_key": {
+            "material_contracts_documents_inspection": 0.0,
+            "declaration": 0.0
+          }
+        },
+        "RESTATED FINANCIAL STATEMENTS": {
+          "best_key": "unmapped",
+          "best_score": 0.0,
+          "scores_by_key": {
+            "material_contracts_documents_inspection": 0.0,
+            "declaration": 0.0
+          }
+        },
+        "OTHER FINANCIAL INFORMATION": {
+          "best_key": "unmapped",
+          "best_score": 0.0,
+          "scores_by_key": {
+            "material_contracts_documents_inspection": 0.0,
+            "declaration": 0.0
+          }
+        },
+        "CAPITALISATION STATEMENT": {
+          "best_key": "unmapped",
+          "best_score": 0.0,
+          "scores_by_key": {
+            "material_contracts_documents_inspection": 0.0,
+            "declaration": 0.0
+          }
+        },
+        "FINANCIAL INDEBTEDNESS": {
+          "best_key": "unmapped",
+          "best_score": 0.0,
+          "scores_by_key": {
+            "material_contracts_documents_inspection": 0.0,
+            "declaration": 0.0
+          }
+        },
+        "MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATION": {
+          "best_key": "unmapped",
+          "best_score": 0.0,
+          "scores_by_key": {
+            "material_contracts_documents_inspection": 0.0,
+            "declaration": 0.0
+          }
+        },
+        "OUTSTANDING LITIGATION AND MATERIAL DEVELOPMENTS": {
+          "best_key": "unmapped",
+          "best_score": 0.0,
+          "scores_by_key": {
+            "material_contracts_documents_inspection": 0.0,
+            "declaration": 0.0
+          }
+        },
+        "GOVERNMENT AND OTHER APPROVALS": {
+          "best_key": "unmapped",
+          "best_score": 0.0,
+          "scores_by_key": {
+            "material_contracts_documents_inspection": 0.0,
+            "declaration": 0.0
+          }
+        },
+        "OTHER REGULATORY AND STATUTORY DISCLOSURES": {
+          "best_key": "unmapped",
+          "best_score": 0.0,
+          "scores_by_key": {
+            "material_contracts_documents_inspection": 0.0,
+            "declaration": 0.0
+          }
+        },
+        "TERMS OF THE OFFER": {
+          "best_key": "unmapped",
+          "best_score": 0.0,
+          "scores_by_key": {
+            "material_contracts_documents_inspection": 0.0,
+            "declaration": 0.0
+          }
+        },
+        "OFFER STRUCTURE": {
+          "best_key": "unmapped",
+          "best_score": 0.0,
+          "scores_by_key": {
+            "material_contracts_documents_inspection": 0.0,
+            "declaration": 0.0
+          }
+        },
+        "OFFER PROCEDURE": {
+          "best_key": "unmapped",
+          "best_score": 0.0,
+          "scores_by_key": {
+            "material_contracts_documents_inspection": 0.0,
+            "declaration": 0.0
+          }
+        },
+        "RESTRICTIONS ON FOREIGN OWNERSHIP OF INDIAN SECURITIES": {
+          "best_key": "unmapped",
+          "best_score": 0.0,
+          "scores_by_key": {
+            "material_contracts_documents_inspection": 0.0,
+            "declaration": 0.0
+          }
+        },
+        "MATERIAL CONTRACTS AND DOCUMENTS FOR INSPECTION": {
+          "best_key": "unmapped",
+          "best_score": 0.0,
+          "scores_by_key": {
+            "material_contracts_documents_inspection": 0.0,
+            "declaration": 0.0
+          }
+        },
+        "DECLARATION": {
+          "best_key": "unmapped",
+          "best_score": 0.0,
+          "scores_by_key": {
+            "material_contracts_documents_inspection": 0.0,
+            "declaration": 0.0
+          }
+        }
+      }
+    }
+  }
+}

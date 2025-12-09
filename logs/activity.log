@@ -1,0 +1,817 @@
+2025-12-09 12:18:52 — INFO — Use pytorch device_name: cpu
+2025-12-09 12:18:54 — INFO — Use pytorch device_name: cpu
+2025-12-09 12:18:54 — WARNING —  * Debugger is active!
+2025-12-09 12:18:54 — INFO —  * Debugger PIN: 541-922-035
+2025-12-09 12:19:14 — INFO — 127.0.0.1 - - [09/Dec/2025 12:19:14] "GET /status/tata_capital HTTP/1.1" 200 -
+2025-12-09 12:19:14 — INFO — \U0001f4e5 DHRP entries retrieved — 1 entries
+2025-12-09 12:19:14 — INFO — 127.0.0.1 - - [09/Dec/2025 12:19:14] "GET /get_all_dhrps HTTP/1.1" 200 -
+2025-12-09 12:19:14 — INFO — 127.0.0.1 - - [09/Dec/2025 12:19:14] "GET /status/tata_capital HTTP/1.1" 200 -
+2025-12-09 12:19:14 — INFO — 127.0.0.1 - - [09/Dec/2025 12:19:14] "GET /status/tata_capital HTTP/1.1" 200 -
+2025-12-09 12:19:14 — INFO — 127.0.0.1 - - [09/Dec/2025 12:19:14] "GET /status/tata_capital HTTP/1.1" 200 -
+2025-12-09 12:19:14 — INFO — 127.0.0.1 - - [09/Dec/2025 12:19:14] "GET /status/tata_capital HTTP/1.1" 200 -
+2025-12-09 12:19:14 — INFO — 127.0.0.1 - - [09/Dec/2025 12:19:14] "GET /status/tata_capital HTTP/1.1" 200 -
+2025-12-09 12:19:14 — INFO — 127.0.0.1 - - [09/Dec/2025 12:19:14] "GET /status/tata_capital HTTP/1.1" 200 -
+2025-12-09 12:19:14 — INFO — 127.0.0.1 - - [09/Dec/2025 12:19:14] "GET /status/tata_capital HTTP/1.1" 200 -
+2025-12-09 12:19:44 — INFO — \U0001f4e5 DHRP entries retrieved — 1 entries
+2025-12-09 12:19:44 — INFO — 127.0.0.1 - - [09/Dec/2025 12:19:44] "GET /get_all_dhrps HTTP/1.1" 200 -
+2025-12-09 12:20:04 — INFO — 127.0.0.1 - - [09/Dec/2025 12:20:04] "GET /status/tata_capital HTTP/1.1" 200 -
+2025-12-09 12:20:09 — INFO — 127.0.0.1 - - [09/Dec/2025 12:20:09] "GET /status/tata_capital HTTP/1.1" 200 -
+2025-12-09 12:20:11 — INFO — \U0001f5d1\ufe0f File deleted: uploads/tata_capital.pdf
+2025-12-09 12:20:11 — WARNING — \u26a0\ufe0f File not found for deletion: pickles/tata_capital.pkl
+2025-12-09 12:20:11 — WARNING — \u26a0\ufe0f File not found for deletion: pickles/tata_capital_embedded.pkl
+2025-12-09 12:20:11 — INFO — \U0001f5d1\ufe0f File deleted: toc/tata_capital.json
+2025-12-09 12:20:11 — WARNING — \u26a0\ufe0f File not found for deletion: risk_summary/tata_capital.json
+2025-12-09 12:20:11 — WARNING — \u26a0\ufe0f File not found for deletion: answered_csv/tata_capital_analysis.csv
+2025-12-09 12:20:11 — WARNING — \u26a0\ufe0f File not found for deletion: status/tata_capital.json
+2025-12-09 12:20:11 — INFO — \U0001f5c2\ufe0f DB entry and related records removed for: tata_capital.pdf — Company: TATA CAPITAL LIMITED 
+2025-12-09 12:20:11 — INFO — 127.0.0.1 - - [09/Dec/2025 12:20:11] "POST /delete/tata_capital.pdf HTTP/1.1" 200 -
+2025-12-09 12:20:15 — INFO — \U0001f4e5 DHRP entries retrieved — 0 entries
+2025-12-09 12:20:15 — INFO — 127.0.0.1 - - [09/Dec/2025 12:20:15] "GET /get_all_dhrps HTTP/1.1" 200 -
+2025-12-09 12:20:16 — INFO — \U0001f4e5 DHRP entries retrieved — 0 entries
+2025-12-09 12:20:16 — INFO — 127.0.0.1 - - [09/Dec/2025 12:20:16] "GET /get_all_dhrps HTTP/1.1" 200 -
+2025-12-09 12:21:02 — INFO — \U0001f4c4 PDF saved: tata_capital.pdf by Amal for Tata Capital
+2025-12-09 12:21:02 — INFO — \U0001f4e5 DHRP entry saved to database: tata_capital.pdf
+2025-12-09 12:21:02 — INFO — \U0001f5c2\ufe0f Entry added to index: tata_capital.pdf
+2025-12-09 12:21:08 — INFO — \U0001f4d1 TOC extracted and saved to file: toc\tata_capital.json
+2025-12-09 12:21:08 — INFO — \u2705 TOC saved to DB for tata_capital
+2025-12-09 12:21:08 — INFO — 127.0.0.1 - - [09/Dec/2025 12:21:08] "POST /upload HTTP/1.1" 200 -
+2025-12-09 12:21:24 — INFO — \U0001f680 Starting background processing for: tata_capital.pdf — Company: Tata Capital
+2025-12-09 12:21:24 — INFO — \U0001f4c4 Background task started for: tata_capital.pdf — Company: Tata Capital
+2025-12-09 12:21:24 — INFO — 127.0.0.1 - - [09/Dec/2025 12:21:24] "[35m[1mPOST /process/tata_capital HTTP/1.1[0m" 202 -
+2025-12-09 12:21:24 — INFO — \U0001f504 Stage updated to '\U0001f527 Chunking PDF by TOC' for tata_capital
+2025-12-09 12:21:24 — INFO — \U0001f4c4 Starting chunking for PDF: c:\Users\2000166072\Documents\DRHP Prospectus\dhrp2\uploads\tata_capital.pdf
+2025-12-09 12:21:24 — INFO — \u27a1\ufe0f Processing section 'SECTION I: GENERAL' subsection 'DEFINITIONS AND ABBREVIATIONS' pages 5-20
+2025-12-09 12:21:25 — INFO — \U0001f4e5 DHRP entries retrieved — 1 entries
+2025-12-09 12:21:25 — INFO — 127.0.0.1 - - [09/Dec/2025 12:21:25] "GET /get_all_dhrps HTTP/1.1" 200 -
+2025-12-09 12:21:26 — INFO — 127.0.0.1 - - [09/Dec/2025 12:21:26] "GET /status/tata_capital HTTP/1.1" 200 -
+2025-12-09 12:21:32 — INFO — \u2705 Created 94 chunks for SECTION I: GENERAL \u2192 DEFINITIONS AND ABBREVIATIONS
+2025-12-09 12:21:32 — INFO — \u27a1\ufe0f Processing section 'SECTION I: GENERAL' subsection 'SUMMARY OF THE OFFER DOCUMENT' pages 20-47
+2025-12-09 12:21:33 — INFO — 127.0.0.1 - - [09/Dec/2025 12:21:33] "GET /status/tata_capital HTTP/1.1" 200 -
+2025-12-09 12:21:36 — INFO — 127.0.0.1 - - [09/Dec/2025 12:21:36] "GET /status/tata_capital HTTP/1.1" 200 -
+2025-12-09 12:21:41 — INFO — 127.0.0.1 - - [09/Dec/2025 12:21:41] "GET /status/tata_capital HTTP/1.1" 200 -
+2025-12-09 12:21:43 — INFO — \u2705 Created 66 chunks for SECTION I: GENERAL \u2192 SUMMARY OF THE OFFER DOCUMENT
+2025-12-09 12:21:43 — INFO — \u27a1\ufe0f Processing section 'SECTION I: GENERAL' subsection 'CURRENCY OF PRESENTATION' pages 47-52
+2025-12-09 12:21:45 — INFO — \u2705 Created 25 chunks for SECTION I: GENERAL \u2192 CURRENCY OF PRESENTATION
+2025-12-09 12:21:45 — INFO — \u27a1\ufe0f Processing section 'SECTION I: GENERAL' subsection 'FORWARD-LOOKING STATEMENTS' pages 52-53
+2025-12-09 12:21:45 — INFO — \u2705 Created 5 chunks for SECTION I: GENERAL \u2192 FORWARD-LOOKING STATEMENTS
+2025-12-09 12:21:45 — INFO — \u27a1\ufe0f Processing section 'SECTION II: RISK FACTORS' subsection 'FULL' pages 53-101
+2025-12-09 12:21:46 — INFO — 127.0.0.1 - - [09/Dec/2025 12:21:46] "GET /status/tata_capital HTTP/1.1" 200 -
+2025-12-09 12:21:51 — INFO — 127.0.0.1 - - [09/Dec/2025 12:21:51] "GET /status/tata_capital HTTP/1.1" 200 -
+2025-12-09 12:21:55 — INFO — \U0001f4e5 DHRP entries retrieved — 1 entries
+2025-12-09 12:21:55 — INFO — 127.0.0.1 - - [09/Dec/2025 12:21:55] "GET /get_all_dhrps HTTP/1.1" 200 -
+2025-12-09 12:21:56 — INFO — 127.0.0.1 - - [09/Dec/2025 12:21:56] "GET /status/tata_capital HTTP/1.1" 200 -
+2025-12-09 12:22:01 — INFO — 127.0.0.1 - - [09/Dec/2025 12:22:01] "GET /status/tata_capital HTTP/1.1" 200 -
+2025-12-09 12:22:07 — INFO — 127.0.0.1 - - [09/Dec/2025 12:22:07] "GET /status/tata_capital HTTP/1.1" 200 -
+2025-12-09 12:22:08 — INFO — \u2705 Created 190 chunks for SECTION II: RISK FACTORS \u2192 FULL
+2025-12-09 12:22:08 — INFO — \u27a1\ufe0f Processing section 'SECTION III: INTRODUCTION' subsection 'THE OFFER' pages 101-103
+2025-12-09 12:22:09 — INFO — \u2705 Created 11 chunks for SECTION III: INTRODUCTION \u2192 THE OFFER
+2025-12-09 12:22:09 — INFO — \u27a1\ufe0f Processing section 'SECTION III: INTRODUCTION' subsection 'SUMMARY OF FINANCIAL INFORMATION' pages 103-109
+2025-12-09 12:22:10 — INFO — \u2705 Created 17 chunks for SECTION III: INTRODUCTION \u2192 SUMMARY OF FINANCIAL INFORMATION
+2025-12-09 12:22:10 — INFO — \u27a1\ufe0f Processing section 'SECTION III: INTRODUCTION' subsection 'GENERAL INFORMATION' pages 109-118
+2025-12-09 12:22:11 — INFO — 127.0.0.1 - - [09/Dec/2025 12:22:11] "GET /status/tata_capital HTTP/1.1" 200 -
+2025-12-09 12:22:13 — INFO — \u2705 Created 34 chunks for SECTION III: INTRODUCTION \u2192 GENERAL INFORMATION
+2025-12-09 12:22:13 — INFO — \u27a1\ufe0f Processing section 'SECTION III: INTRODUCTION' subsection 'CAPITAL STRUCTURE' pages 118-143
+2025-12-09 12:22:16 — INFO — 127.0.0.1 - - [09/Dec/2025 12:22:16] "GET /status/tata_capital HTTP/1.1" 200 -
+2025-12-09 12:22:19 — INFO — \u2705 Created 65 chunks for SECTION III: INTRODUCTION \u2192 CAPITAL STRUCTURE
+2025-12-09 12:22:19 — INFO — \u27a1\ufe0f Processing section 'SECTION III: INTRODUCTION' subsection 'OBJECTS OF THE OFFER' pages 143-149
+2025-12-09 12:22:21 — INFO — \u2705 Created 29 chunks for SECTION III: INTRODUCTION \u2192 OBJECTS OF THE OFFER
+2025-12-09 12:22:21 — INFO — \u27a1\ufe0f Processing section 'SECTION III: INTRODUCTION' subsection 'BASIS FOR OFFER PRICE' pages 149-165
+2025-12-09 12:22:21 — INFO — 127.0.0.1 - - [09/Dec/2025 12:22:21] "GET /status/tata_capital HTTP/1.1" 200 -
+2025-12-09 12:22:26 — INFO — \U0001f4e5 DHRP entries retrieved — 1 entries
+2025-12-09 12:22:26 — INFO — 127.0.0.1 - - [09/Dec/2025 12:22:26] "GET /get_all_dhrps HTTP/1.1" 200 -
+2025-12-09 12:22:26 — INFO — 127.0.0.1 - - [09/Dec/2025 12:22:26] "GET /status/tata_capital HTTP/1.1" 200 -
+2025-12-09 12:22:27 — INFO — \u2705 Created 65 chunks for SECTION III: INTRODUCTION \u2192 BASIS FOR OFFER PRICE
+2025-12-09 12:22:27 — INFO — \u27a1\ufe0f Processing section 'SECTION III: INTRODUCTION' subsection 'STATEMENT OF POSSIBLE SPECIAL TAX BENEFITS' pages 165-171
+2025-12-09 12:22:28 — INFO — \u2705 Created 18 chunks for SECTION III: INTRODUCTION \u2192 STATEMENT OF POSSIBLE SPECIAL TAX BENEFITS
+2025-12-09 12:22:28 — INFO — \u27a1\ufe0f Processing section 'SECTION IV: ABOUT OUR COMPANY' subsection 'INDUSTRY OVERVIEW' pages 171-312
+2025-12-09 12:22:57 — INFO — \U0001f4e5 DHRP entries retrieved — 1 entries
+2025-12-09 12:22:57 — INFO — 127.0.0.1 - - [09/Dec/2025 12:22:57] "GET /get_all_dhrps HTTP/1.1" 200 -
+2025-12-09 12:23:04 — INFO — \u2705 Created 286 chunks for SECTION IV: ABOUT OUR COMPANY \u2192 INDUSTRY OVERVIEW
+2025-12-09 12:23:04 — INFO — \u27a1\ufe0f Processing section 'SECTION IV: ABOUT OUR COMPANY' subsection 'OUR BUSINESS' pages 312-341
+2025-12-09 12:23:04 — INFO — 127.0.0.1 - - [09/Dec/2025 12:23:04] "GET /status/tata_capital HTTP/1.1" 200 -
+2025-12-09 12:23:17 — INFO — \u2705 Created 108 chunks for SECTION IV: ABOUT OUR COMPANY \u2192 OUR BUSINESS
+2025-12-09 12:23:17 — INFO — \u27a1\ufe0f Processing section 'SECTION IV: ABOUT OUR COMPANY' subsection 'OUR MERGER WITH TATA MOTORS FINANCE LIMITED' pages 341-353
+2025-12-09 12:23:20 — INFO — \u2705 Created 40 chunks for SECTION IV: ABOUT OUR COMPANY \u2192 OUR MERGER WITH TATA MOTORS FINANCE LIMITED
+2025-12-09 12:23:20 — INFO — \u27a1\ufe0f Processing section 'SECTION IV: ABOUT OUR COMPANY' subsection 'KEY REGULATIONS AND POLICIES' pages 353-373
+2025-12-09 12:23:28 — INFO — \U0001f4e5 DHRP entries retrieved — 1 entries
+2025-12-09 12:23:28 — INFO — 127.0.0.1 - - [09/Dec/2025 12:23:28] "GET /get_all_dhrps HTTP/1.1" 200 -
+2025-12-09 12:23:32 — INFO — \u2705 Created 78 chunks for SECTION IV: ABOUT OUR COMPANY \u2192 KEY REGULATIONS AND POLICIES
+2025-12-09 12:23:32 — INFO — \u27a1\ufe0f Processing section 'SECTION IV: ABOUT OUR COMPANY' subsection 'HISTORY AND CERTAIN CORPORATE MATTERS' pages 373-385
+2025-12-09 12:23:35 — INFO — \u2705 Created 42 chunks for SECTION IV: ABOUT OUR COMPANY \u2192 HISTORY AND CERTAIN CORPORATE MATTERS
+2025-12-09 12:23:35 — INFO — \u27a1\ufe0f Processing section 'SECTION IV: ABOUT OUR COMPANY' subsection 'OUR MANAGEMENT' pages 385-408
+2025-12-09 12:23:43 — INFO — \u2705 Created 59 chunks for SECTION IV: ABOUT OUR COMPANY \u2192 OUR MANAGEMENT
+2025-12-09 12:23:43 — INFO — \u27a1\ufe0f Processing section 'SECTION IV: ABOUT OUR COMPANY' subsection 'OUR PROMOTER AND PROMOTER GROUP' pages 408-421
+2025-12-09 12:23:48 — INFO — \u2705 Created 23 chunks for SECTION IV: ABOUT OUR COMPANY \u2192 OUR PROMOTER AND PROMOTER GROUP
+2025-12-09 12:23:48 — INFO — \u27a1\ufe0f Processing section 'SECTION IV: ABOUT OUR COMPANY' subsection 'DIVIDEND POLICY' pages 421-422
+2025-12-09 12:23:49 — INFO — \u2705 Created 5 chunks for SECTION IV: ABOUT OUR COMPANY \u2192 DIVIDEND POLICY
+2025-12-09 12:23:49 — INFO — \u27a1\ufe0f Processing section 'SECTION IV: ABOUT OUR COMPANY' subsection 'SELECTED STATISTICAL INFORMATION' pages 422-441
+2025-12-09 12:23:56 — INFO — \u2705 Created 66 chunks for SECTION IV: ABOUT OUR COMPANY \u2192 SELECTED STATISTICAL INFORMATION
+2025-12-09 12:23:56 — INFO — \u27a1\ufe0f Processing section 'SECTION V: FINANCIAL INFORMATION' subsection 'RESTATED CONSOLIDATED FINANCIAL INFORMATION' pages 441-620
+2025-12-09 12:23:59 — INFO — \U0001f4e5 DHRP entries retrieved — 1 entries
+2025-12-09 12:23:59 — INFO — 127.0.0.1 - - [09/Dec/2025 12:23:59] "GET /get_all_dhrps HTTP/1.1" 200 -
+2025-12-09 12:24:05 — INFO — 127.0.0.1 - - [09/Dec/2025 12:24:05] "GET /status/tata_capital HTTP/1.1" 200 -
+2025-12-09 12:25:11 — INFO — \u2705 Created 656 chunks for SECTION V: FINANCIAL INFORMATION \u2192 RESTATED CONSOLIDATED FINANCIAL INFORMATION
+2025-12-09 12:25:11 — INFO — \u27a1\ufe0f Processing section 'SECTION V: FINANCIAL INFORMATION' subsection 'OTHER FINANCIAL INFORMATION' pages 620-659
+2025-12-09 12:25:25 — INFO — \u2705 Created 127 chunks for SECTION V: FINANCIAL INFORMATION \u2192 OTHER FINANCIAL INFORMATION
+2025-12-09 12:25:25 — INFO — \u27a1\ufe0f Processing section 'SECTION V: FINANCIAL INFORMATION' subsection 'CAPITALISATION STATEMENT' pages 659-660
+2025-12-09 12:25:25 — INFO — \u2705 Created 3 chunks for SECTION V: FINANCIAL INFORMATION \u2192 CAPITALISATION STATEMENT
+2025-12-09 12:25:25 — INFO — \u27a1\ufe0f Processing section 'SECTION V: FINANCIAL INFORMATION' subsection 'FINANCIAL INDEBTEDNESS' pages 660-664
+2025-12-09 12:25:27 — INFO — \u2705 Created 16 chunks for SECTION V: FINANCIAL INFORMATION \u2192 FINANCIAL INDEBTEDNESS
+2025-12-09 12:25:27 — INFO — \u27a1\ufe0f Processing section 'SECTION VI: LEGAL AND OTHER INFORMATION' subsection 'OUTSTANDING LITIGATION AND MATERIAL DEVELOPMENTS' pages 664-696
+2025-12-09 12:25:30 — INFO — \U0001f4e5 DHRP entries retrieved — 1 entries
+2025-12-09 12:25:30 — INFO — 127.0.0.1 - - [09/Dec/2025 12:25:30] "GET /get_all_dhrps HTTP/1.1" 200 -
+2025-12-09 12:25:30 — INFO — 127.0.0.1 - - [09/Dec/2025 12:25:30] "GET /status/tata_capital HTTP/1.1" 200 -
+2025-12-09 12:25:31 — INFO — 127.0.0.1 - - [09/Dec/2025 12:25:31] "GET /status/tata_capital HTTP/1.1" 200 -
+2025-12-09 12:25:46 — INFO — 127.0.0.1 - - [09/Dec/2025 12:25:46] "GET /status/tata_capital HTTP/1.1" 200 -
+2025-12-09 12:25:46 — INFO — 127.0.0.1 - - [09/Dec/2025 12:25:46] "GET /status/tata_capital HTTP/1.1" 200 -
+2025-12-09 12:25:51 — INFO — 127.0.0.1 - - [09/Dec/2025 12:25:51] "GET /status/tata_capital HTTP/1.1" 200 -
+2025-12-09 12:25:54 — INFO — \u2705 Created 115 chunks for SECTION VI: LEGAL AND OTHER INFORMATION \u2192 OUTSTANDING LITIGATION AND MATERIAL DEVELOPMENTS
+2025-12-09 12:25:54 — INFO — \u27a1\ufe0f Processing section 'SECTION VI: LEGAL AND OTHER INFORMATION' subsection 'GOVERNMENT AND OTHER APPROVALS' pages 696-701
+2025-12-09 12:25:56 — INFO — 127.0.0.1 - - [09/Dec/2025 12:25:56] "GET /status/tata_capital HTTP/1.1" 200 -
+2025-12-09 12:25:57 — INFO — \u2705 Created 13 chunks for SECTION VI: LEGAL AND OTHER INFORMATION \u2192 GOVERNMENT AND OTHER APPROVALS
+2025-12-09 12:25:57 — INFO — \u27a1\ufe0f Processing section 'SECTION VII: GROUP COMPANIES' subsection 'FULL' pages 701-718
+2025-12-09 12:26:02 — INFO — \U0001f4e5 DHRP entries retrieved — 1 entries
+2025-12-09 12:26:02 — INFO — 127.0.0.1 - - [09/Dec/2025 12:26:02] "GET /get_all_dhrps HTTP/1.1" 200 -
+2025-12-09 12:26:03 — INFO — 127.0.0.1 - - [09/Dec/2025 12:26:03] "GET /status/tata_capital HTTP/1.1" 200 -
+2025-12-09 12:26:06 — INFO — 127.0.0.1 - - [09/Dec/2025 12:26:06] "GET /status/tata_capital HTTP/1.1" 200 -
+2025-12-09 12:26:07 — INFO — \u2705 Created 31 chunks for SECTION VII: GROUP COMPANIES \u2192 FULL
+2025-12-09 12:26:07 — INFO — \u27a1\ufe0f Processing section 'SECTION VIII: OTHER REGULATORY AND STATUTORY DISCLOSURES' subsection 'FULL' pages 718-753
+2025-12-09 12:26:11 — INFO — 127.0.0.1 - - [09/Dec/2025 12:26:11] "GET /status/tata_capital HTTP/1.1" 200 -
+2025-12-09 12:26:17 — INFO — 127.0.0.1 - - [09/Dec/2025 12:26:17] "GET /status/tata_capital HTTP/1.1" 200 -
+2025-12-09 12:26:21 — INFO — 127.0.0.1 - - [09/Dec/2025 12:26:21] "GET /status/tata_capital HTTP/1.1" 200 -
+2025-12-09 12:26:22 — INFO — \u2705 Created 92 chunks for SECTION VIII: OTHER REGULATORY AND STATUTORY DISCLOSURES \u2192 FULL
+2025-12-09 12:26:22 — INFO — \u27a1\ufe0f Processing section 'SECTION IX: OFFER INFORMATION' subsection 'TERMS OF THE OFFER' pages 753-759
+2025-12-09 12:26:24 — INFO — \u2705 Created 27 chunks for SECTION IX: OFFER INFORMATION \u2192 TERMS OF THE OFFER
+2025-12-09 12:26:24 — INFO — \u27a1\ufe0f Processing section 'SECTION IX: OFFER INFORMATION' subsection 'OFFER STRUCTURE' pages 759-763
+2025-12-09 12:26:25 — INFO — \u2705 Created 15 chunks for SECTION IX: OFFER INFORMATION \u2192 OFFER STRUCTURE
+2025-12-09 12:26:25 — INFO — \u27a1\ufe0f Processing section 'SECTION IX: OFFER INFORMATION' subsection 'OFFER PROCEDURE' pages 763-781
+2025-12-09 12:26:26 — INFO — 127.0.0.1 - - [09/Dec/2025 12:26:26] "GET /status/tata_capital HTTP/1.1" 200 -
+2025-12-09 12:26:31 — INFO — 127.0.0.1 - - [09/Dec/2025 12:26:31] "GET /status/tata_capital HTTP/1.1" 200 -
+2025-12-09 12:26:31 — INFO — \u2705 Created 72 chunks for SECTION IX: OFFER INFORMATION \u2192 OFFER PROCEDURE
+2025-12-09 12:26:31 — INFO — \u27a1\ufe0f Processing section 'SECTION IX: OFFER INFORMATION' subsection 'RESTRICTIONS ON FOREIGN OWNERSHIP OF INDIAN SECURITIES' pages 781-783
+2025-12-09 12:26:32 — INFO — \u2705 Created 12 chunks for SECTION IX: OFFER INFORMATION \u2192 RESTRICTIONS ON FOREIGN OWNERSHIP OF INDIAN SECURITIES
+2025-12-09 12:26:32 — INFO — \u27a1\ufe0f Processing section 'SECTION X: DESCRIPTION OF EQUITY SHARES AND TERMS OF ARTICLES OF ASSOCIATION' subsection 'MATERIAL CONTRACTS AND DOCUMENTS FOR INSPECTION' pages 822-825
+2025-12-09 12:26:34 — INFO — \U0001f4e5 DHRP entries retrieved — 1 entries
+2025-12-09 12:26:34 — INFO — 127.0.0.1 - - [09/Dec/2025 12:26:34] "GET /get_all_dhrps HTTP/1.1" 200 -
+2025-12-09 12:26:34 — INFO — \u2705 Created 11 chunks for SECTION X: DESCRIPTION OF EQUITY SHARES AND TERMS OF ARTICLES OF ASSOCIATION \u2192 MATERIAL CONTRACTS AND DOCUMENTS FOR INSPECTION
+2025-12-09 12:26:34 — INFO — \u27a1\ufe0f Processing section 'SECTION X: DESCRIPTION OF EQUITY SHARES AND TERMS OF ARTICLES OF ASSOCIATION' subsection 'DECLARATION' pages 825-825
+2025-12-09 12:26:34 — INFO — \u2705 Created 2 chunks for SECTION X: DESCRIPTION OF EQUITY SHARES AND TERMS OF ARTICLES OF ASSOCIATION \u2192 DECLARATION
+2025-12-09 12:26:35 — INFO — \u2705 Saved 2518 chunks to pickles\tata_capital.pkl with sentence-based overlap=2
+2025-12-09 12:26:35 — INFO — \U0001f504 Stage updated to '\U0001f517 Embedding chunks' for tata_capital
+2025-12-09 12:26:35 — INFO — \U0001f4e6 Loaded 2518 chunks from pickles\tata_capital.pkl
+2025-12-09 12:26:35 — INFO — Use pytorch device_name: cpu
+2025-12-09 12:26:35 — INFO — \u2699\ufe0f Generating embeddings...
+2025-12-09 12:27:04 — INFO — 127.0.0.1 - - [09/Dec/2025 12:27:04] "GET /status/tata_capital HTTP/1.1" 200 -
+2025-12-09 12:27:05 — INFO — \U0001f4e5 DHRP entries retrieved — 1 entries
+2025-12-09 12:27:05 — INFO — 127.0.0.1 - - [09/Dec/2025 12:27:05] "GET /get_all_dhrps HTTP/1.1" 200 -
+2025-12-09 12:27:36 — INFO — \U0001f4e5 DHRP entries retrieved — 1 entries
+2025-12-09 12:27:36 — INFO — 127.0.0.1 - - [09/Dec/2025 12:27:36] "GET /get_all_dhrps HTTP/1.1" 200 -
+2025-12-09 12:28:04 — INFO — 127.0.0.1 - - [09/Dec/2025 12:28:04] "GET /status/tata_capital HTTP/1.1" 200 -
+2025-12-09 12:28:07 — INFO — \U0001f4e5 DHRP entries retrieved — 1 entries
+2025-12-09 12:28:07 — INFO — 127.0.0.1 - - [09/Dec/2025 12:28:07] "GET /get_all_dhrps HTTP/1.1" 200 -
+2025-12-09 12:28:38 — INFO — \U0001f4e5 DHRP entries retrieved — 1 entries
+2025-12-09 12:28:38 — INFO — 127.0.0.1 - - [09/Dec/2025 12:28:38] "GET /get_all_dhrps HTTP/1.1" 200 -
+2025-12-09 12:29:05 — INFO — 127.0.0.1 - - [09/Dec/2025 12:29:05] "GET /status/tata_capital HTTP/1.1" 200 -
+2025-12-09 12:29:09 — INFO — \U0001f4e5 DHRP entries retrieved — 1 entries
+2025-12-09 12:29:09 — INFO — 127.0.0.1 - - [09/Dec/2025 12:29:09] "GET /get_all_dhrps HTTP/1.1" 200 -
+2025-12-09 12:29:40 — INFO — \U0001f4e5 DHRP entries retrieved — 1 entries
+2025-12-09 12:29:40 — INFO — 127.0.0.1 - - [09/Dec/2025 12:29:40] "GET /get_all_dhrps HTTP/1.1" 200 -
+2025-12-09 12:30:05 — INFO — 127.0.0.1 - - [09/Dec/2025 12:30:05] "GET /status/tata_capital HTTP/1.1" 200 -
+2025-12-09 12:30:11 — INFO — \U0001f4e5 DHRP entries retrieved — 1 entries
+2025-12-09 12:30:12 — INFO — 127.0.0.1 - - [09/Dec/2025 12:30:12] "GET /get_all_dhrps HTTP/1.1" 200 -
+2025-12-09 12:30:42 — INFO — \U0001f4e5 DHRP entries retrieved — 1 entries
+2025-12-09 12:30:42 — INFO — 127.0.0.1 - - [09/Dec/2025 12:30:42] "GET /get_all_dhrps HTTP/1.1" 200 -
+2025-12-09 12:31:05 — INFO — 127.0.0.1 - - [09/Dec/2025 12:31:05] "GET /status/tata_capital HTTP/1.1" 200 -
+2025-12-09 12:31:13 — INFO — \U0001f4e5 DHRP entries retrieved — 1 entries
+2025-12-09 12:31:13 — INFO — 127.0.0.1 - - [09/Dec/2025 12:31:13] "GET /get_all_dhrps HTTP/1.1" 200 -
+2025-12-09 12:31:17 — INFO — \u2705 Saved embedded chunks to pickles\tata_capital_embedded.pkl
+2025-12-09 12:31:17 — INFO — \U0001f504 Stage updated to '\U0001f4e6 Loading embedded chunks' for tata_capital
+2025-12-09 12:31:17 — INFO — \U0001f504 Stage updated to '\U0001f9e0 Generating risk summary' for tata_capital
+2025-12-09 12:31:17 — INFO — Use pytorch device_name: cpu
+2025-12-09 12:31:17 — INFO — Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-12-09 12:31:26 — INFO — \U0001f504 Stage updated to '\U0001f4dd Saving risk summary' for tata_capital
+2025-12-09 12:31:26 — INFO — \u2705 Risk summary saved to DB for tata_capital
+2025-12-09 12:31:26 — INFO — \U0001f504 Stage updated to '\U0001f4ca Evaluating Q&A CSV' for tata_capital
+2025-12-09 12:31:27 — INFO — Use pytorch device_name: cpu
+2025-12-09 12:31:27 — INFO — Embedding dimension: 1536
+2025-12-09 12:31:27 — INFO — \U0001f680 Starting evaluation for base=tata_capital, rows=11
+2025-12-09 12:31:27 — INFO — Use pytorch device_name: cpu
+2025-12-09 12:31:27 — INFO — Embedding dimension: 1536
+2025-12-09 12:31:27 — INFO — Normalized CSV section='section_iv introduction', subsection='None'
+2025-12-09 12:31:27 — INFO — Exact filter matched 0 chunks
+2025-12-09 12:31:27 — INFO — Section-only fallback matched 0 chunks
+2025-12-09 12:31:27 — WARNING — No chunks matched for question='Post Issue Paid up Capital - Not more than Rs. 25 crores' (section=SECTION_IV INTRODUCTION, subsection=)
+2025-12-09 12:31:27 — INFO — \U0001f50e Row 1: selected 0 top chunks (section=SECTION_IV INTRODUCTION, subsection=)
+2025-12-09 12:31:27 — INFO — \U0001f4dd Row 1: built LLM prompt for question=Post Issue Paid up Capital - Not more than Rs. 25 crores
+2025-12-09 12:31:27 — INFO — --- Prompt for Row 1 (Post Issue Paid up Capital - Not more than Rs. 25 crores) ---
+You are given text from a Draft Red Herring Prospectus (DRHP).
+
+Question:
+Post Issue Paid up Capital - Not more than Rs. 25 crores
+
+Guidance:
+Whether the aggregate nominal value under paid up equity capital after the offer is not more than Rs. 25 crores.
+
+Relevant Document Content:
+
+
+Your primary objective is to extract the value for the particulars
+- First, try to identify the particulars directly from the chunk text.
+- If the particulars cannot be found explicitly, use the 'What AI search for in DRHP' as supporting context  to infer the answer.
+- If the question seems to look like a one word answer then provide that or else a concise summary.
+- Sometimes the answer may not be directly available in the document, use your best judgment to infer the answer based on the provided content.
+- Dont inculde the words 'As per the document or chunks or excerpts' in answer.
+- Dont give me long paragraphs you can use short summarized explanations but only after the answer.
+
+- Respond strictly in JSON with keys:
+{
+  "question": "<repeat the Particulars>",
+  "answer": "<short factual answer or concise summary>"
+}
+
+2025-12-09 12:31:27 — INFO — Using Gemini API key #1 (GEMINI_API_KEY)
+2025-12-09 12:31:27 — ERROR — Non-retryable Gemini API error 404 with GEMINI_API_KEY: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-2.0-flash-live is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available 
+2025-12-09 12:31:27 — INFO — Key GEMINI_API_KEY exhausted retries or non-retryable error; switching to next if available.
+2025-12-09 12:31:27 — INFO — Using Gemini API key #2 (GEMINI_API_KEY1)
+2025-12-09 12:31:28 — ERROR — Non-retryable Gemini API error 404 with GEMINI_API_KEY1: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-2.0-flash-live is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available 
+2025-12-09 12:31:28 — INFO — Key GEMINI_API_KEY1 exhausted retries or non-retryable error; switching to next if available.
+2025-12-09 12:31:28 — INFO — Using Gemini API key #3 (GEMINI_API_KEY2)
+2025-12-09 12:31:28 — ERROR — Non-retryable Gemini API error 404 with GEMINI_API_KEY2: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-2.0-flash-live is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available 
+2025-12-09 12:31:28 — INFO — Key GEMINI_API_KEY2 exhausted retries or non-retryable error; switching to next if available.
+2025-12-09 12:31:28 — ERROR — All Gemini API keys failed or exhausted.
+2025-12-09 12:31:28 — INFO — \U0001f916 Row 1: parsed answer='[API Error: all API keys exhausted]'
+2025-12-09 12:31:29 — INFO — Use pytorch device_name: cpu
+2025-12-09 12:31:29 — INFO — Embedding dimension: 1536
+2025-12-09 12:31:29 — INFO — Normalized CSV section='section_ii summary of offer document or summary of draft prospectus', subsection='None'
+2025-12-09 12:31:29 — INFO — Exact filter matched 0 chunks
+2025-12-09 12:31:29 — INFO — Section-only fallback matched 0 chunks
+2025-12-09 12:31:29 — WARNING — No chunks matched for question='Networth - Atleast Rs. 1 crore for 2 preceding full financial years.' (section=SECTION_II Summary of Offer Document or Summary of Draft Prospectus, subsection=)
+2025-12-09 12:31:29 — INFO — \U0001f50e Row 2: selected 0 top chunks (section=SECTION_II Summary of Offer Document or Summary of Draft Prospectus, subsection=)
+2025-12-09 12:31:29 — INFO — \U0001f4dd Row 2: built LLM prompt for question=Networth - Atleast Rs. 1 crore for 2 preceding full financial years.
+2025-12-09 12:31:29 — INFO — --- Prompt for Row 2 (Networth - Atleast Rs. 1 crore for 2 preceding full financial years.) ---
+You are given text from a Draft Red Herring Prospectus (DRHP).
+
+Question:
+Networth - Atleast Rs. 1 crore for 2 preceding full financial years.
+
+Guidance:
+(1) Compare the requirement of net-worth in the Summary of Financial information with the minimum eligibility criteria.
+
+(2) Ignore Standalone figures if both Consolidated and Standalone financials provided.
+
+Relevant Document Content:
+
+
+Your primary objective is to extract the value for the particulars
+- First, try to identify the particulars directly from the chunk text.
+- If the particulars cannot be found explicitly, use the 'What AI search for in DRHP' as supporting context  to infer the answer.
+- If the question seems to look like a one word answer then provide that or else a concise summary.
+- Sometimes the answer may not be directly available in the document, use your best judgment to infer the answer based on the provided content.
+- Dont inculde the words 'As per the document or chunks or excerpts' in answer.
+- Dont give me long paragraphs you can use short summarized explanations but only after the answer.
+
+- Respond strictly in JSON with keys:
+{
+  "question": "<repeat the Particulars>",
+  "answer": "<short factual answer or concise summary>"
+}
+
+2025-12-09 12:31:29 — INFO — Using Gemini API key #1 (GEMINI_API_KEY)
+2025-12-09 12:31:29 — ERROR — Non-retryable Gemini API error 404 with GEMINI_API_KEY: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-2.0-flash-live is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available 
+2025-12-09 12:31:29 — INFO — Key GEMINI_API_KEY exhausted retries or non-retryable error; switching to next if available.
+2025-12-09 12:31:29 — INFO — Using Gemini API key #2 (GEMINI_API_KEY1)
+2025-12-09 12:31:29 — ERROR — Non-retryable Gemini API error 404 with GEMINI_API_KEY1: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-2.0-flash-live is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available 
+2025-12-09 12:31:29 — INFO — Key GEMINI_API_KEY1 exhausted retries or non-retryable error; switching to next if available.
+2025-12-09 12:31:29 — INFO — Using Gemini API key #3 (GEMINI_API_KEY2)
+2025-12-09 12:31:30 — ERROR — Non-retryable Gemini API error 404 with GEMINI_API_KEY2: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-2.0-flash-live is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available 
+2025-12-09 12:31:30 — INFO — Key GEMINI_API_KEY2 exhausted retries or non-retryable error; switching to next if available.
+2025-12-09 12:31:30 — ERROR — All Gemini API keys failed or exhausted.
+2025-12-09 12:31:30 — INFO — \U0001f916 Row 2: parsed answer='[API Error: all API keys exhausted]'
+2025-12-09 12:31:30 — INFO — Use pytorch device_name: cpu
+2025-12-09 12:31:30 — INFO — Embedding dimension: 1536
+2025-12-09 12:31:30 — INFO — Normalized CSV section='section_viii  other regulatory and statutiry disclosures', subsection='None'
+2025-12-09 12:31:30 — INFO — Exact filter matched 0 chunks
+2025-12-09 12:31:30 — INFO — Section-only fallback matched 0 chunks
+2025-12-09 12:31:30 — WARNING — No chunks matched for question='Net Tangible Asset - Rs 3 crores in last preceding (full) financial year.' (section=SECTION_VIII - Other Regulatory and Statutiry Disclosures, subsection=)
+2025-12-09 12:31:30 — INFO — \U0001f50e Row 3: selected 0 top chunks (section=SECTION_VIII - Other Regulatory and Statutiry Disclosures, subsection=)
+2025-12-09 12:31:30 — INFO — \U0001f4dd Row 3: built LLM prompt for question=Net Tangible Asset - Rs 3 crores in last preceding (full) financial year.
+2025-12-09 12:31:30 — INFO — --- Prompt for Row 3 (Net Tangible Asset - Rs 3 crores in last preceding (full) financial year.) ---
+You are given text from a Draft Red Herring Prospectus (DRHP).
+
+Question:
+Net Tangible Asset - Rs 3 crores in last preceding (full) financial year.
+
+Guidance:
+Whether the amount for Net Tangible Asset disclosed in last preceding full financial year is Rs. 3 crores or more
+
+Relevant Document Content:
+
+
+Your primary objective is to extract the value for the particulars
+- First, try to identify the particulars directly from the chunk text.
+- If the particulars cannot be found explicitly, use the 'What AI search for in DRHP' as supporting context  to infer the answer.
+- If the question seems to look like a one word answer then provide that or else a concise summary.
+- Sometimes the answer may not be directly available in the document, use your best judgment to infer the answer based on the provided content.
+- Dont inculde the words 'As per the document or chunks or excerpts' in answer.
+- Dont give me long paragraphs you can use short summarized explanations but only after the answer.
+
+- Respond strictly in JSON with keys:
+{
+  "question": "<repeat the Particulars>",
+  "answer": "<short factual answer or concise summary>"
+}
+
+2025-12-09 12:31:30 — INFO — Using Gemini API key #1 (GEMINI_API_KEY)
+2025-12-09 12:31:30 — ERROR — Non-retryable Gemini API error 404 with GEMINI_API_KEY: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-2.0-flash-live is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available 
+2025-12-09 12:31:30 — INFO — Key GEMINI_API_KEY exhausted retries or non-retryable error; switching to next if available.
+2025-12-09 12:31:30 — INFO — Using Gemini API key #2 (GEMINI_API_KEY1)
+2025-12-09 12:31:30 — ERROR — Non-retryable Gemini API error 404 with GEMINI_API_KEY1: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-2.0-flash-live is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available 
+2025-12-09 12:31:30 — INFO — Key GEMINI_API_KEY1 exhausted retries or non-retryable error; switching to next if available.
+2025-12-09 12:31:30 — INFO — Using Gemini API key #3 (GEMINI_API_KEY2)
+2025-12-09 12:31:31 — ERROR — Non-retryable Gemini API error 404 with GEMINI_API_KEY2: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-2.0-flash-live is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available 
+2025-12-09 12:31:31 — INFO — Key GEMINI_API_KEY2 exhausted retries or non-retryable error; switching to next if available.
+2025-12-09 12:31:31 — ERROR — All Gemini API keys failed or exhausted.
+2025-12-09 12:31:31 — INFO — \U0001f916 Row 3: parsed answer='[API Error: all API keys exhausted]'
+2025-12-09 12:31:31 — INFO — Use pytorch device_name: cpu
+2025-12-09 12:31:31 — INFO — Embedding dimension: 1536
+2025-12-09 12:31:31 — INFO — Normalized CSV section='section vi  history and certain corporate matters', subsection='None'
+2025-12-09 12:31:31 — INFO — Exact filter matched 0 chunks
+2025-12-09 12:31:31 — INFO — Section-only fallback matched 0 chunks
+2025-12-09 12:31:31 — WARNING — No chunks matched for question='Track Record -The track record of applicant company seeking listing should be atleast 3 years. Where the applicant company has taken over a proprietorship concern/ firm/ LLP, then the track record together with such proprietorship concern/ registered firm/ LLP should be atleast 3 years. registered partnership Provided, the applicant company seeking listing should have a track record of operations for atleast one full financial year and audited financial results for one full financial  year.Or Where the applicant company does not have a track record of 3 years, then the Project for which IPO is being proposed should be appraised and funded by NABARD, SIDBI, Banks (other than co-operative banks), Financial Institutions.Provided, the applicant company seeking listing should have a track record of operations for atleast one full financial year and audited financial results for one full financial year.' (section=Section VI - History and certain corporate matters, subsection=)
+2025-12-09 12:31:31 — INFO — \U0001f50e Row 4: selected 0 top chunks (section=Section VI - History and certain corporate matters, subsection=)
+2025-12-09 12:31:31 — INFO — \U0001f4dd Row 4: built LLM prompt for question=Track Record -The track record of applicant company seeking listing should be atleast 3 years. Where the applicant company has taken over a proprietorship concern/ firm/ LLP, then the track record together with such proprietorship concern/ registered firm/ LLP should be atleast 3 years. registered partnership Provided, the applicant company seeking listing should have a track record of operations for atleast one full financial year and audited financial results for one full financial  year.Or Where the applicant company does not have a track record of 3 years, then the Project for which IPO is being proposed should be appraised and funded by NABARD, SIDBI, Banks (other than co-operative banks), Financial Institutions.Provided, the applicant company seeking listing should have a track record of operations for atleast one full financial year and audited financial results for one full financial year.
+2025-12-09 12:31:31 — INFO — --- Prompt for Row 4 (Track Record -The track record of applicant company seeking listing should be atleast 3 years. Where the applicant company has taken over a proprietorship concern/ firm/ LLP, then the track record together with such proprietorship concern/ registered firm/ LLP should be atleast 3 years. registered partnership Provided, the applicant company seeking listing should have a track record of operations for atleast one full financial year and audited financial results for one full financial  year.Or Where the applicant company does not have a track record of 3 years, then the Project for which IPO is being proposed should be appraised and funded by NABARD, SIDBI, Banks (other than co-operative banks), Financial Institutions.Provided, the applicant company seeking listing should have a track record of operations for atleast one full financial year and audited financial results for one full financial year.) ---
+You are given text from a Draft Red Herring Prospectus (DRHP).
+
+Question:
+Track Record -The track record of applicant company seeking listing should be atleast 3 years. Where the applicant company has taken over a proprietorship concern/ firm/ LLP, then the track record together with such proprietorship concern/ registered firm/ LLP should be atleast 3 years. registered partnership Provided, the applicant company seeking listing should have a track record of operations for atleast one full financial year and audited financial results for one full financial  year.Or Where the applicant company does not have a track record of 3 years, then the Project for which IPO is being proposed should be appraised and funded by NABARD, SIDBI, Banks (other than co-operative banks), Financial Institutions.Provided, the applicant company seeking listing should have a track record of operations for atleast one full financial year and audited financial results for one full financial year.
+
+Guidance:
+For 3 years track record:
+
+Check on the cover page and Chapter - History and certain corporate matters for the date of incorporation of the company and whether the company has completed 3 years of existence as on the date of the draft offer document and in case of conversion of of LLP to company or conversion of partnership to company
+
+Relevant Document Content:
+
+
+Your primary objective is to extract the value for the particulars
+- First, try to identify the particulars directly from the chunk text.
+- If the particulars cannot be found explicitly, use the 'What AI search for in DRHP' as supporting context  to infer the answer.
+- If the question seems to look like a one word answer then provide that or else a concise summary.
+- Sometimes the answer may not be directly available in the document, use your best judgment to infer the answer based on the provided content.
+- Dont inculde the words 'As per the document or chunks or excerpts' in answer.
+- Dont give me long paragraphs you can use short summarized explanations but only after the answer.
+
+- Respond strictly in JSON with keys:
+{
+  "question": "<repeat the Particulars>",
+  "answer": "<short factual answer or concise summary>"
+}
+
+2025-12-09 12:31:31 — INFO — Using Gemini API key #1 (GEMINI_API_KEY)
+2025-12-09 12:31:32 — ERROR — Non-retryable Gemini API error 404 with GEMINI_API_KEY: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-2.0-flash-live is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available 
+2025-12-09 12:31:32 — INFO — Key GEMINI_API_KEY exhausted retries or non-retryable error; switching to next if available.
+2025-12-09 12:31:32 — INFO — Using Gemini API key #2 (GEMINI_API_KEY1)
+2025-12-09 12:31:32 — ERROR — Non-retryable Gemini API error 404 with GEMINI_API_KEY1: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-2.0-flash-live is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available 
+2025-12-09 12:31:32 — INFO — Key GEMINI_API_KEY1 exhausted retries or non-retryable error; switching to next if available.
+2025-12-09 12:31:32 — INFO — Using Gemini API key #3 (GEMINI_API_KEY2)
+2025-12-09 12:31:32 — ERROR — Non-retryable Gemini API error 404 with GEMINI_API_KEY2: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-2.0-flash-live is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available 
+2025-12-09 12:31:32 — INFO — Key GEMINI_API_KEY2 exhausted retries or non-retryable error; switching to next if available.
+2025-12-09 12:31:32 — ERROR — All Gemini API keys failed or exhausted.
+2025-12-09 12:31:32 — INFO — \U0001f916 Row 4: parsed answer='[API Error: all API keys exhausted]'
+2025-12-09 12:31:32 — INFO — Use pytorch device_name: cpu
+2025-12-09 12:31:32 — INFO — Embedding dimension: 1536
+2025-12-09 12:31:33 — INFO — Normalized CSV section='section_viii  other regulatory and statutory disclosures', subsection='None'
+2025-12-09 12:31:33 — INFO — Exact filter matched 0 chunks
+2025-12-09 12:31:33 — INFO — Section-only fallback matched 0 chunks
+2025-12-09 12:31:33 — WARNING — No chunks matched for question='Earnings before Interest, Depreciation and tax -The company/ proprietorship concern/ registered firm/ LLP should have operating profit (earnings before interest, depreciation and tax) from operations for 2 out of 3 latest financial years preceding the application date.Provided the company should have operating profit (earnings before interest, depreciation and tax) from operations for one full financial year preceding the application date.For companies seeking listing where the project has been appraised and funded by NABARD, SIDBI, Banks (other than co-operative banks), Financial Institutions, it shall have positive operating profit (earnings before interest, depreciation and tax) from operations in one full preceding financial year.' (section=SECTION_VIII - Other Regulatory and Statutory Disclosures, subsection=)
+2025-12-09 12:31:33 — INFO — \U0001f50e Row 5: selected 0 top chunks (section=SECTION_VIII - Other Regulatory and Statutory Disclosures, subsection=)
+2025-12-09 12:31:33 — INFO — \U0001f4dd Row 5: built LLM prompt for question=Earnings before Interest, Depreciation and tax -The company/ proprietorship concern/ registered firm/ LLP should have operating profit (earnings before interest, depreciation and tax) from operations for 2 out of 3 latest financial years preceding the application date.Provided the company should have operating profit (earnings before interest, depreciation and tax) from operations for one full financial year preceding the application date.For companies seeking listing where the project has been appraised and funded by NABARD, SIDBI, Banks (other than co-operative banks), Financial Institutions, it shall have positive operating profit (earnings before interest, depreciation and tax) from operations in one full preceding financial year.
+2025-12-09 12:31:33 — INFO — --- Prompt for Row 5 (Earnings before Interest, Depreciation and tax -The company/ proprietorship concern/ registered firm/ LLP should have operating profit (earnings before interest, depreciation and tax) from operations for 2 out of 3 latest financial years preceding the application date.Provided the company should have operating profit (earnings before interest, depreciation and tax) from operations for one full financial year preceding the application date.For companies seeking listing where the project has been appraised and funded by NABARD, SIDBI, Banks (other than co-operative banks), Financial Institutions, it shall have positive operating profit (earnings before interest, depreciation and tax) from operations in one full preceding financial year.) ---
+You are given text from a Draft Red Herring Prospectus (DRHP).
+
+Question:
+Earnings before Interest, Depreciation and tax -The company/ proprietorship concern/ registered firm/ LLP should have operating profit (earnings before interest, depreciation and tax) from operations for 2 out of 3 latest financial years preceding the application date.Provided the company should have operating profit (earnings before interest, depreciation and tax) from operations for one full financial year preceding the application date.For companies seeking listing where the project has been appraised and funded by NABARD, SIDBI, Banks (other than co-operative banks), Financial Institutions, it shall have positive operating profit (earnings before interest, depreciation and tax) from operations in one full preceding financial year.
+
+Guidance:
+Whether the amount for Earnings before interest, Depreciation and tax disclosed in last preceding full financial year is Rs. 3 crores or more
+
+Relevant Document Content:
+
+
+Your primary objective is to extract the value for the particulars
+- First, try to identify the particulars directly from the chunk text.
+- If the particulars cannot be found explicitly, use the 'What AI search for in DRHP' as supporting context  to infer the answer.
+- If the question seems to look like a one word answer then provide that or else a concise summary.
+- Sometimes the answer may not be directly available in the document, use your best judgment to infer the answer based on the provided content.
+- Dont inculde the words 'As per the document or chunks or excerpts' in answer.
+- Dont give me long paragraphs you can use short summarized explanations but only after the answer.
+
+- Respond strictly in JSON with keys:
+{
+  "question": "<repeat the Particulars>",
+  "answer": "<short factual answer or concise summary>"
+}
+
+2025-12-09 12:31:33 — INFO — Using Gemini API key #1 (GEMINI_API_KEY)
+2025-12-09 12:31:33 — ERROR — Non-retryable Gemini API error 404 with GEMINI_API_KEY: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-2.0-flash-live is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available 
+2025-12-09 12:31:33 — INFO — Key GEMINI_API_KEY exhausted retries or non-retryable error; switching to next if available.
+2025-12-09 12:31:33 — INFO — Using Gemini API key #2 (GEMINI_API_KEY1)
+2025-12-09 12:31:34 — ERROR — Non-retryable Gemini API error 404 with GEMINI_API_KEY1: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-2.0-flash-live is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available 
+2025-12-09 12:31:34 — INFO — Key GEMINI_API_KEY1 exhausted retries or non-retryable error; switching to next if available.
+2025-12-09 12:31:34 — INFO — Using Gemini API key #3 (GEMINI_API_KEY2)
+2025-12-09 12:31:34 — ERROR — Non-retryable Gemini API error 404 with GEMINI_API_KEY2: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-2.0-flash-live is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available 
+2025-12-09 12:31:34 — INFO — Key GEMINI_API_KEY2 exhausted retries or non-retryable error; switching to next if available.
+2025-12-09 12:31:34 — ERROR — All Gemini API keys failed or exhausted.
+2025-12-09 12:31:34 — INFO — \U0001f916 Row 5: parsed answer='[API Error: all API keys exhausted]'
+2025-12-09 12:31:34 — INFO — Use pytorch device_name: cpu
+2025-12-09 12:31:34 — INFO — Embedding dimension: 1536
+2025-12-09 12:31:34 — INFO — Normalized CSV section='section_viii  other regulatory and statutory disclosures', subsection='None'
+2025-12-09 12:31:34 — INFO — Exact filter matched 0 chunks
+2025-12-09 12:31:34 — INFO — Section-only fallback matched 0 chunks
+2025-12-09 12:31:34 — WARNING — No chunks matched for question='Leverage Ratio - Leverage ratio of not more than 3:1. Relaxation may be granted to finance companies.' (section=SECTION_VIII - Other Regulatory and Statutory Disclosures, subsection=)
+2025-12-09 12:31:34 — INFO — \U0001f50e Row 6: selected 0 top chunks (section=SECTION_VIII - Other Regulatory and Statutory Disclosures, subsection=)
+2025-12-09 12:31:34 — INFO — \U0001f4dd Row 6: built LLM prompt for question=Leverage Ratio - Leverage ratio of not more than 3:1. Relaxation may be granted to finance companies.
+2025-12-09 12:31:34 — INFO — --- Prompt for Row 6 (Leverage Ratio - Leverage ratio of not more than 3:1. Relaxation may be granted to finance companies.) ---
+You are given text from a Draft Red Herring Prospectus (DRHP).
+
+Question:
+Leverage Ratio - Leverage ratio of not more than 3:1. Relaxation may be granted to finance companies.
+
+Guidance:
+Whether the ratio for Leverage Ratio is not more than 3:1
+
+Relevant Document Content:
+
+
+Your primary objective is to extract the value for the particulars
+- First, try to identify the particulars directly from the chunk text.
+- If the particulars cannot be found explicitly, use the 'What AI search for in DRHP' as supporting context  to infer the answer.
+- If the question seems to look like a one word answer then provide that or else a concise summary.
+- Sometimes the answer may not be directly available in the document, use your best judgment to infer the answer based on the provided content.
+- Dont inculde the words 'As per the document or chunks or excerpts' in answer.
+- Dont give me long paragraphs you can use short summarized explanations but only after the answer.
+
+- Respond strictly in JSON with keys:
+{
+  "question": "<repeat the Particulars>",
+  "answer": "<short factual answer or concise summary>"
+}
+
+2025-12-09 12:31:34 — INFO — Using Gemini API key #1 (GEMINI_API_KEY)
+2025-12-09 12:31:35 — ERROR — Non-retryable Gemini API error 404 with GEMINI_API_KEY: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-2.0-flash-live is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available 
+2025-12-09 12:31:35 — INFO — Key GEMINI_API_KEY exhausted retries or non-retryable error; switching to next if available.
+2025-12-09 12:31:35 — INFO — Using Gemini API key #2 (GEMINI_API_KEY1)
+2025-12-09 12:31:35 — ERROR — Non-retryable Gemini API error 404 with GEMINI_API_KEY1: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-2.0-flash-live is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available 
+2025-12-09 12:31:35 — INFO — Key GEMINI_API_KEY1 exhausted retries or non-retryable error; switching to next if available.
+2025-12-09 12:31:35 — INFO — Using Gemini API key #3 (GEMINI_API_KEY2)
+2025-12-09 12:31:35 — ERROR — Non-retryable Gemini API error 404 with GEMINI_API_KEY2: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-2.0-flash-live is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available 
+2025-12-09 12:31:35 — INFO — Key GEMINI_API_KEY2 exhausted retries or non-retryable error; switching to next if available.
+2025-12-09 12:31:35 — ERROR — All Gemini API keys failed or exhausted.
+2025-12-09 12:31:35 — INFO — \U0001f916 Row 6: parsed answer='[API Error: all API keys exhausted]'
+2025-12-09 12:31:36 — INFO — Use pytorch device_name: cpu
+2025-12-09 12:31:36 — INFO — Embedding dimension: 1536
+2025-12-09 12:31:36 — INFO — Normalized CSV section='section_viii  other regulatory and statutory disclosures', subsection='None'
+2025-12-09 12:31:36 — INFO — Exact filter matched 0 chunks
+2025-12-09 12:31:36 — INFO — Section-only fallback matched 0 chunks
+2025-12-09 12:31:36 — WARNING — No chunks matched for question='Disciplinary action -No regulatory action of suspension of trading against the promoter(s) or companies promoted by the promoters by any stock Exchange having nationwide trading terminals.The Promoter(s) or directors shall not be promoter(s) or directors (other than independent directors) of compulsory delisted companies by the Exchange and the applicability of consequences of compulsory delisting is attracted or companies that are suspended from trading on account of non-compliance.Director should not be disqualified/ debarred by any of the Regulatory Authority.' (section=SECTION_VIII - Other Regulatory and Statutory Disclosures, subsection=)
+2025-12-09 12:31:36 — INFO — \U0001f50e Row 7: selected 0 top chunks (section=SECTION_VIII - Other Regulatory and Statutory Disclosures, subsection=)
+2025-12-09 12:31:36 — INFO — \U0001f4dd Row 7: built LLM prompt for question=Disciplinary action -No regulatory action of suspension of trading against the promoter(s) or companies promoted by the promoters by any stock Exchange having nationwide trading terminals.The Promoter(s) or directors shall not be promoter(s) or directors (other than independent directors) of compulsory delisted companies by the Exchange and the applicability of consequences of compulsory delisting is attracted or companies that are suspended from trading on account of non-compliance.Director should not be disqualified/ debarred by any of the Regulatory Authority.
+2025-12-09 12:31:36 — INFO — --- Prompt for Row 7 (Disciplinary action -No regulatory action of suspension of trading against the promoter(s) or companies promoted by the promoters by any stock Exchange having nationwide trading terminals.The Promoter(s) or directors shall not be promoter(s) or directors (other than independent directors) of compulsory delisted companies by the Exchange and the applicability of consequences of compulsory delisting is attracted or companies that are suspended from trading on account of non-compliance.Director should not be disqualified/ debarred by any of the Regulatory Authority.) ---
+You are given text from a Draft Red Herring Prospectus (DRHP).
+
+Question:
+Disciplinary action -No regulatory action of suspension of trading against the promoter(s) or companies promoted by the promoters by any stock Exchange having nationwide trading terminals.The Promoter(s) or directors shall not be promoter(s) or directors (other than independent directors) of compulsory delisted companies by the Exchange and the applicability of consequences of compulsory delisting is attracted or companies that are suspended from trading on account of non-compliance.Director should not be disqualified/ debarred by any of the Regulatory Authority.
+
+Guidance:
+There are no regulatory action of suspension of trading against the promoter(s) or companies promoted by the promoters by any stock Exchange having nationwide trading terminals. 
+
+The Promoter(s) or directors shall not be promoter(s) or director(s) (other than independent directors) of compulsory delisted companies by the Exchange and the applicability of consequences of compulsory delisting is attracted or companies that are suspended from trading on account of non-compliance.
+
+Director should not be disqualified/ debarred by any of the Regulatory Authority.
+
+Relevant Document Content:
+
+
+Your primary objective is to extract the value for the particulars
+- First, try to identify the particulars directly from the chunk text.
+- If the particulars cannot be found explicitly, use the 'What AI search for in DRHP' as supporting context  to infer the answer.
+- If the question seems to look like a one word answer then provide that or else a concise summary.
+- Sometimes the answer may not be directly available in the document, use your best judgment to infer the answer based on the provided content.
+- Dont inculde the words 'As per the document or chunks or excerpts' in answer.
+- Dont give me long paragraphs you can use short summarized explanations but only after the answer.
+
+- Respond strictly in JSON with keys:
+{
+  "question": "<repeat the Particulars>",
+  "answer": "<short factual answer or concise summary>"
+}
+
+2025-12-09 12:31:36 — INFO — Using Gemini API key #1 (GEMINI_API_KEY)
+2025-12-09 12:31:36 — ERROR — Non-retryable Gemini API error 404 with GEMINI_API_KEY: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-2.0-flash-live is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available 
+2025-12-09 12:31:36 — INFO — Key GEMINI_API_KEY exhausted retries or non-retryable error; switching to next if available.
+2025-12-09 12:31:36 — INFO — Using Gemini API key #2 (GEMINI_API_KEY1)
+2025-12-09 12:31:37 — ERROR — Non-retryable Gemini API error 404 with GEMINI_API_KEY1: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-2.0-flash-live is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available 
+2025-12-09 12:31:37 — INFO — Key GEMINI_API_KEY1 exhausted retries or non-retryable error; switching to next if available.
+2025-12-09 12:31:37 — INFO — Using Gemini API key #3 (GEMINI_API_KEY2)
+2025-12-09 12:31:37 — ERROR — Non-retryable Gemini API error 404 with GEMINI_API_KEY2: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-2.0-flash-live is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available 
+2025-12-09 12:31:37 — INFO — Key GEMINI_API_KEY2 exhausted retries or non-retryable error; switching to next if available.
+2025-12-09 12:31:37 — ERROR — All Gemini API keys failed or exhausted.
+2025-12-09 12:31:37 — INFO — \U0001f916 Row 7: parsed answer='[API Error: all API keys exhausted]'
+2025-12-09 12:31:37 — INFO — Use pytorch device_name: cpu
+2025-12-09 12:31:37 — INFO — Embedding dimension: 1536
+2025-12-09 12:31:37 — INFO — Normalized CSV section='section_viii other regulatory and statutory disclosures', subsection='None'
+2025-12-09 12:31:37 — INFO — Exact filter matched 0 chunks
+2025-12-09 12:31:37 — INFO — Section-only fallback matched 0 chunks
+2025-12-09 12:31:37 — WARNING — No chunks matched for question='If the issuer, any of its promoters, promoter group or directors or selling shareholders are debarred from accessing the capital market by the Board.' (section=SECTION_VIII  -Other Regulatory and Statutory Disclosures, subsection=)
+2025-12-09 12:31:37 — INFO — \U0001f50e Row 8: selected 0 top chunks (section=SECTION_VIII  -Other Regulatory and Statutory Disclosures, subsection=)
+2025-12-09 12:31:37 — INFO — \U0001f4dd Row 8: built LLM prompt for question=If the issuer, any of its promoters, promoter group or directors or selling shareholders are debarred from accessing the capital market by the Board.
+2025-12-09 12:31:37 — INFO — --- Prompt for Row 8 (If the issuer, any of its promoters, promoter group or directors or selling shareholders are debarred from accessing the capital market by the Board.) ---
+You are given text from a Draft Red Herring Prospectus (DRHP).
+
+Question:
+If the issuer, any of its promoters, promoter group or directors or selling shareholders are debarred from accessing the capital market by the Board.
+
+Guidance:
+The issuer, any of its promoters, promoter group or directors or selling shareholders are debarred from accessing the capital market by the Board
+
+Relevant Document Content:
+
+
+Your primary objective is to extract the value for the particulars
+- First, try to identify the particulars directly from the chunk text.
+- If the particulars cannot be found explicitly, use the 'What AI search for in DRHP' as supporting context  to infer the answer.
+- If the question seems to look like a one word answer then provide that or else a concise summary.
+- Sometimes the answer may not be directly available in the document, use your best judgment to infer the answer based on the provided content.
+- Dont inculde the words 'As per the document or chunks or excerpts' in answer.
+- Dont give me long paragraphs you can use short summarized explanations but only after the answer.
+
+- Respond strictly in JSON with keys:
+{
+  "question": "<repeat the Particulars>",
+  "answer": "<short factual answer or concise summary>"
+}
+
+2025-12-09 12:31:37 — INFO — Using Gemini API key #1 (GEMINI_API_KEY)
+2025-12-09 12:31:38 — ERROR — Non-retryable Gemini API error 404 with GEMINI_API_KEY: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-2.0-flash-live is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available 
+2025-12-09 12:31:38 — INFO — Key GEMINI_API_KEY exhausted retries or non-retryable error; switching to next if available.
+2025-12-09 12:31:38 — INFO — Using Gemini API key #2 (GEMINI_API_KEY1)
+2025-12-09 12:31:38 — ERROR — Non-retryable Gemini API error 404 with GEMINI_API_KEY1: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-2.0-flash-live is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available 
+2025-12-09 12:31:38 — INFO — Key GEMINI_API_KEY1 exhausted retries or non-retryable error; switching to next if available.
+2025-12-09 12:31:38 — INFO — Using Gemini API key #3 (GEMINI_API_KEY2)
+2025-12-09 12:31:38 — ERROR — Non-retryable Gemini API error 404 with GEMINI_API_KEY2: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-2.0-flash-live is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available 
+2025-12-09 12:31:38 — INFO — Key GEMINI_API_KEY2 exhausted retries or non-retryable error; switching to next if available.
+2025-12-09 12:31:38 — ERROR — All Gemini API keys failed or exhausted.
+2025-12-09 12:31:38 — INFO — \U0001f916 Row 8: parsed answer='[API Error: all API keys exhausted]'
+2025-12-09 12:31:38 — INFO — Use pytorch device_name: cpu
+2025-12-09 12:31:38 — INFO — Embedding dimension: 1536
+2025-12-09 12:31:38 — INFO — Normalized CSV section='section_viii other regulatory and statutory disclosures', subsection='None'
+2025-12-09 12:31:38 — INFO — Exact filter matched 0 chunks
+2025-12-09 12:31:38 — INFO — Section-only fallback matched 0 chunks
+2025-12-09 12:31:38 — WARNING — No chunks matched for question='If any of the promoters or directors of the issuer is a promoter or director of any other    company which is debarred from accessing the capital market by the Board.' (section=SECTION_VIII  -Other Regulatory and Statutory Disclosures, subsection=)
+2025-12-09 12:31:38 — INFO — \U0001f50e Row 9: selected 0 top chunks (section=SECTION_VIII  -Other Regulatory and Statutory Disclosures, subsection=)
+2025-12-09 12:31:38 — INFO — \U0001f4dd Row 9: built LLM prompt for question=If any of the promoters or directors of the issuer is a promoter or director of any other    company which is debarred from accessing the capital market by the Board.
+2025-12-09 12:31:38 — INFO — --- Prompt for Row 9 (If any of the promoters or directors of the issuer is a promoter or director of any other    company which is debarred from accessing the capital market by the Board.) ---
+You are given text from a Draft Red Herring Prospectus (DRHP).
+
+Question:
+If any of the promoters or directors of the issuer is a promoter or director of any other    company which is debarred from accessing the capital market by the Board.
+
+Guidance:
+The promoters or directors of the issuer not a promoter or director of any other company which is debarred from accessing the capital market by the Board
+
+Relevant Document Content:
+
+
+Your primary objective is to extract the value for the particulars
+- First, try to identify the particulars directly from the chunk text.
+- If the particulars cannot be found explicitly, use the 'What AI search for in DRHP' as supporting context  to infer the answer.
+- If the question seems to look like a one word answer then provide that or else a concise summary.
+- Sometimes the answer may not be directly available in the document, use your best judgment to infer the answer based on the provided content.
+- Dont inculde the words 'As per the document or chunks or excerpts' in answer.
+- Dont give me long paragraphs you can use short summarized explanations but only after the answer.
+
+- Respond strictly in JSON with keys:
+{
+  "question": "<repeat the Particulars>",
+  "answer": "<short factual answer or concise summary>"
+}
+
+2025-12-09 12:31:38 — INFO — Using Gemini API key #1 (GEMINI_API_KEY)
+2025-12-09 12:31:39 — ERROR — Non-retryable Gemini API error 404 with GEMINI_API_KEY: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-2.0-flash-live is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available 
+2025-12-09 12:31:39 — INFO — Key GEMINI_API_KEY exhausted retries or non-retryable error; switching to next if available.
+2025-12-09 12:31:39 — INFO — Using Gemini API key #2 (GEMINI_API_KEY1)
+2025-12-09 12:31:39 — ERROR — Non-retryable Gemini API error 404 with GEMINI_API_KEY1: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-2.0-flash-live is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available 
+2025-12-09 12:31:39 — INFO — Key GEMINI_API_KEY1 exhausted retries or non-retryable error; switching to next if available.
+2025-12-09 12:31:39 — INFO — Using Gemini API key #3 (GEMINI_API_KEY2)
+2025-12-09 12:31:40 — ERROR — Non-retryable Gemini API error 404 with GEMINI_API_KEY2: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-2.0-flash-live is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available 
+2025-12-09 12:31:40 — INFO — Key GEMINI_API_KEY2 exhausted retries or non-retryable error; switching to next if available.
+2025-12-09 12:31:40 — ERROR — All Gemini API keys failed or exhausted.
+2025-12-09 12:31:40 — INFO — \U0001f916 Row 9: parsed answer='[API Error: all API keys exhausted]'
+2025-12-09 12:31:40 — INFO — Use pytorch device_name: cpu
+2025-12-09 12:31:40 — INFO — Embedding dimension: 1536
+2025-12-09 12:31:40 — INFO — Normalized CSV section='section_viii other regulatory and statutory disclosures', subsection='None'
+2025-12-09 12:31:40 — INFO — Exact filter matched 0 chunks
+2025-12-09 12:31:40 — INFO — Section-only fallback matched 0 chunks
+2025-12-09 12:31:40 — WARNING — No chunks matched for question='if the issuer or any of its promoters or directors is a  wilful defaulter or a fraudulent borrower.' (section=SECTION_VIII  -Other Regulatory and Statutory Disclosures, subsection=)
+2025-12-09 12:31:40 — INFO — \U0001f50e Row 10: selected 0 top chunks (section=SECTION_VIII  -Other Regulatory and Statutory Disclosures, subsection=)
+2025-12-09 12:31:40 — INFO — \U0001f4dd Row 10: built LLM prompt for question=if the issuer or any of its promoters or directors is a  wilful defaulter or a fraudulent borrower.
+2025-12-09 12:31:40 — INFO — --- Prompt for Row 10 (if the issuer or any of its promoters or directors is a  wilful defaulter or a fraudulent borrower.) ---
+You are given text from a Draft Red Herring Prospectus (DRHP).
+
+Question:
+if the issuer or any of its promoters or directors is a  wilful defaulter or a fraudulent borrower.
+
+Guidance:
+The issuer or any of its promoters or directors is a wilful defaulter or a fradulent borrower
+
+Relevant Document Content:
+
+
+Your primary objective is to extract the value for the particulars
+- First, try to identify the particulars directly from the chunk text.
+- If the particulars cannot be found explicitly, use the 'What AI search for in DRHP' as supporting context  to infer the answer.
+- If the question seems to look like a one word answer then provide that or else a concise summary.
+- Sometimes the answer may not be directly available in the document, use your best judgment to infer the answer based on the provided content.
+- Dont inculde the words 'As per the document or chunks or excerpts' in answer.
+- Dont give me long paragraphs you can use short summarized explanations but only after the answer.
+
+- Respond strictly in JSON with keys:
+{
+  "question": "<repeat the Particulars>",
+  "answer": "<short factual answer or concise summary>"
+}
+
+2025-12-09 12:31:40 — INFO — Using Gemini API key #1 (GEMINI_API_KEY)
+2025-12-09 12:31:40 — ERROR — Non-retryable Gemini API error 404 with GEMINI_API_KEY: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-2.0-flash-live is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available 
+2025-12-09 12:31:40 — INFO — Key GEMINI_API_KEY exhausted retries or non-retryable error; switching to next if available.
+2025-12-09 12:31:40 — INFO — Using Gemini API key #2 (GEMINI_API_KEY1)
+2025-12-09 12:31:40 — ERROR — Non-retryable Gemini API error 404 with GEMINI_API_KEY1: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-2.0-flash-live is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available 
+2025-12-09 12:31:40 — INFO — Key GEMINI_API_KEY1 exhausted retries or non-retryable error; switching to next if available.
+2025-12-09 12:31:40 — INFO — Using Gemini API key #3 (GEMINI_API_KEY2)
+2025-12-09 12:31:41 — ERROR — Non-retryable Gemini API error 404 with GEMINI_API_KEY2: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-2.0-flash-live is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available 
+2025-12-09 12:31:41 — INFO — Key GEMINI_API_KEY2 exhausted retries or non-retryable error; switching to next if available.
+2025-12-09 12:31:41 — ERROR — All Gemini API keys failed or exhausted.
+2025-12-09 12:31:41 — INFO — \U0001f916 Row 10: parsed answer='[API Error: all API keys exhausted]'
+2025-12-09 12:31:41 — INFO — Use pytorch device_name: cpu
+2025-12-09 12:31:41 — INFO — Embedding dimension: 1536
+2025-12-09 12:31:41 — INFO — Normalized CSV section='section_viii other regulatory and statutory disclosures', subsection='None'
+2025-12-09 12:31:41 — INFO — Exact filter matched 0 chunks
+2025-12-09 12:31:41 — INFO — Section-only fallback matched 0 chunks
+2025-12-09 12:31:41 — WARNING — No chunks matched for question='if any of its promoters or directors is a fugitive economic offender.' (section=SECTION_VIII  -Other Regulatory and Statutory Disclosures, subsection=)
+2025-12-09 12:31:41 — INFO — \U0001f50e Row 11: selected 0 top chunks (section=SECTION_VIII  -Other Regulatory and Statutory Disclosures, subsection=)
+2025-12-09 12:31:41 — INFO — \U0001f4dd Row 11: built LLM prompt for question=if any of its promoters or directors is a fugitive economic offender.
+2025-12-09 12:31:41 — INFO — --- Prompt for Row 11 (if any of its promoters or directors is a fugitive economic offender.) ---
+You are given text from a Draft Red Herring Prospectus (DRHP).
+
+Question:
+if any of its promoters or directors is a fugitive economic offender.
+
+Guidance:
+Promoters or directors is not a fugitive economic offende.
+
+Relevant Document Content:
+
+
+Your primary objective is to extract the value for the particulars
+- First, try to identify the particulars directly from the chunk text.
+- If the particulars cannot be found explicitly, use the 'What AI search for in DRHP' as supporting context  to infer the answer.
+- If the question seems to look like a one word answer then provide that or else a concise summary.
+- Sometimes the answer may not be directly available in the document, use your best judgment to infer the answer based on the provided content.
+- Dont inculde the words 'As per the document or chunks or excerpts' in answer.
+- Dont give me long paragraphs you can use short summarized explanations but only after the answer.
+
+- Respond strictly in JSON with keys:
+{
+  "question": "<repeat the Particulars>",
+  "answer": "<short factual answer or concise summary>"
+}
+
+2025-12-09 12:31:41 — INFO — Using Gemini API key #1 (GEMINI_API_KEY)
+2025-12-09 12:31:41 — ERROR — Non-retryable Gemini API error 404 with GEMINI_API_KEY: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-2.0-flash-live is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available 
+2025-12-09 12:31:41 — INFO — Key GEMINI_API_KEY exhausted retries or non-retryable error; switching to next if available.
+2025-12-09 12:31:41 — INFO — Using Gemini API key #2 (GEMINI_API_KEY1)
+2025-12-09 12:31:42 — ERROR — Non-retryable Gemini API error 404 with GEMINI_API_KEY1: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-2.0-flash-live is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available 
+2025-12-09 12:31:42 — INFO — Key GEMINI_API_KEY1 exhausted retries or non-retryable error; switching to next if available.
+2025-12-09 12:31:42 — INFO — Using Gemini API key #3 (GEMINI_API_KEY2)
+2025-12-09 12:31:42 — ERROR — Non-retryable Gemini API error 404 with GEMINI_API_KEY2: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-2.0-flash-live is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available 
+2025-12-09 12:31:42 — INFO — Key GEMINI_API_KEY2 exhausted retries or non-retryable error; switching to next if available.
+2025-12-09 12:31:42 — ERROR — All Gemini API keys failed or exhausted.
+2025-12-09 12:31:42 — INFO — \U0001f916 Row 11: parsed answer='[API Error: all API keys exhausted]'
+2025-12-09 12:31:42 — INFO — \u2705 CSV evaluation complete: answered_csv\tata_capital_analysis.csv
+2025-12-09 12:31:42 — ERROR — \u274c DB commit failed: (pymysql.err.DataError) (1406, "Data too long for column 'data_field' at row 1")
+[SQL: INSERT INTO fund_evaluations (dhrp_id, base, data_field, answer, review_status) VALUES (%(dhrp_id)s, %(base)s, %(data_field)s, %(answer)s, %(review_status)s)]
+[parameters: {'dhrp_id': None, 'base': 'tata_capital', 'data_field': 'Track Record -The track record of applicant company seeking listing should be atleast 3 years. Where the applicant company has taken over a proprieto ... (612 characters truncated) ... eking listing should have a track record of operations for atleast one full financial year and audited financial results for one full financial year.', 'answer': '[API Error: all API keys exhausted]', 'review_status': 'pending'}]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2025-12-09 12:31:42 — INFO — \U0001f504 Stage updated to '\U0001f4c8 Finalizing status' for tata_capital
+2025-12-09 12:31:42 — INFO — \U0001f504 Stage updated to '\u2705 Completed' for tata_capital
+2025-12-09 12:31:42 — INFO — \U0001f4c8 Status updated to 'Completed' for: tata_capital.pdf
+2025-12-09 12:31:44 — INFO — \U0001f4e5 DHRP entries retrieved — 1 entries
+2025-12-09 12:31:44 — INFO — 127.0.0.1 - - [09/Dec/2025 12:31:44] "GET /get_all_dhrps HTTP/1.1" 200 -
+2025-12-09 12:37:49 — INFO — \U0001f4e5 DHRP entries retrieved — 1 entries
+2025-12-09 12:37:49 — INFO — 127.0.0.1 - - [09/Dec/2025 12:37:49] "GET /get_all_dhrps HTTP/1.1" 200 -
+2025-12-09 12:38:50 — INFO — \U0001f4e5 DHRP entries retrieved — 1 entries
+2025-12-09 12:38:50 — INFO — 127.0.0.1 - - [09/Dec/2025 12:38:50] "GET /get_all_dhrps HTTP/1.1" 200 -
+2025-12-09 12:40:06 — INFO — \U0001f4e5 DHRP entries retrieved — 1 entries
+2025-12-09 12:40:06 — INFO — 127.0.0.1 - - [09/Dec/2025 12:40:06] "GET /get_all_dhrps HTTP/1.1" 200 -
+2025-12-09 14:05:35 — INFO — \U0001f4e5 DHRP entries retrieved — 1 entries
+2025-12-09 14:05:35 — INFO — 127.0.0.1 - - [09/Dec/2025 14:05:35] "GET /get_all_dhrps HTTP/1.1" 200 -

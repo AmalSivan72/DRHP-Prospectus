@@ -1,0 +1,15 @@
+# Virtual environments
+amal/
+venv/
+.env/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Large binaries
+*.dll
+*.so
+*.pyd
+*.exe
+*.bin
