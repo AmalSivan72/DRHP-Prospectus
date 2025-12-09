@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DHRP Analyst Questions</title>
+</head>
+<body>
+    <h2>📊 Analyze DHRP with CSV Questions</h2>
+    <form method="post" enctype="multipart/form-data">
+        <label>Select a document:</label>
+        <select name="selected_doc" required>
+            {% for doc in pkls %}
+            <option value="{{ doc }}">{{ doc }}</option>
+            {% endfor %}
+        </select>
+        <br><br>
+        <label>Upload CSV:</label>
+        <input type="file" name="csv" accept=".csv" required>
+        <br><br>
+        <input type="submit" value="Analyze">
+    </form>
+</body>
+</html>

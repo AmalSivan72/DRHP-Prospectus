@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload DHRP</title>
+    <style>
+        .container { width: 600px; margin: auto; padding: 20px; border: 1px solid #ccc; border-radius: 10px; }
+    </style>
+</head>
+<body>
+    <h2 style="text-align:center;">📤 Upload DHRP Document</h2>
+    <div class="container">
+        <form method="POST" enctype="multipart/form-data">
+            <label>Company Name:</label><br>
+            <input type="text" name="company" required><br><br>
+
+            <label>BSE Code:</label><br>
+            <input type="text" name="bse_code" required><br><br>
+
+            <label>Date of Upload:</label><br>
+            <input type="date" name="upload_date" required><br><br>
+
+            <label>Sector:</label><br>
+            <input type="text" name="sector" required><br><br>
+
+            <label>Promoter Name:</label><br>
+            <input type="text" name="promoter" required><br><br>
+
+            <label>Upload PDF:</label><br>
+            <input type="file" name="pdf" accept="application/pdf" required><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

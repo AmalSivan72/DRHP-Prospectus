@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TOC for {{ doc }}</title>
+</head>
+<body>
+    <h2>📑 Table of Contents: {{ doc }}</h2>
+    <ul>
+        {% for section_title, section_data in toc.items() %}
+        <li>
+            <strong>{{ section_title }} (Pages {{ section_data.pdf_start_page }}–{{ section_data.pdf_end_page }})</strong>
+            {% if section_data.subsections %}
+            <ul>
+                {% for sub_title, sub_data in section_data.subsections.items() %}
+                <li>{{ sub_title }} (Pages {{ sub_data.pdf_start_page }}–{{ sub_data.pdf_end_page }})</li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+        </li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('index') }}">⬅ Back</a>
+</body>
+</html>

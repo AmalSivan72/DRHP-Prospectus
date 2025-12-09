@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Risk Summary: {{ doc }}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #searchInput {
+            width: 300px;
+            padding: 8px;
+            margin-bottom: 20px;
+        }
+        .section {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 20px;
+            background-color: #f9f9f9;
+        }
+        .section-title {
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        ul {
+            padding-left: 20px;
+            margin-top: 0;
+        }
+    </style>
+    <script>
+        function filterSections() {
+            const input = document.getElementById("searchInput").value.toLowerCase();
+            const sections = document.querySelectorAll(".section");
+
+            sections.forEach(section => {
+                const title = section.querySelector(".section-title").textContent.toLowerCase();
+                section.style.display = title.includes(input) || input === "" ? "block" : "none";
+            });
+        }
+    </script>
+</head>
+<body>
+    <h2>🧠 Gemini Risk Summary for {{ doc }}</h2>
+    <input type="text" id="searchInput" onkeyup="filterSections()" placeholder="Search risk type...">
+
+    {% if summary_bullets %}
+        {% for heading, points in summary_bullets.items() %}
+        <div class="section">
+            <div class="section-title">{{ heading }}</div>
+            <ul>
+                {% for point in points %}
+                <li>{{ point }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endfor %}
+    {% else %}
+        <p style="color:red;">❌ No summary generated. Please check the Gemini API response or try again.</p>
+    {% endif %}
+
+    <h3>📄 Full Risk Factors Section (as in document)</h3>
+    <textarea rows="30" cols="100" readonly>{{ risk_text }}</textarea>
+
+    <br><a href="{{ url_for('index') }}">⬅ Back</a>
+</body>
+</html>

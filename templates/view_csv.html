@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Q/A – {{ filename }}</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      font-size: 13px;
+      background-color: #f8f9fa;
+      padding: 20px;
+    }
+    h6 {
+      font-weight: 600;
+      margin-bottom: 0;
+    }
+    table {
+      font-size: 13px;
+    }
+    th, td {
+      padding: 6px 10px;
+      border: 1px solid #dee2e6;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header with Download Button -->
+  <div class="d-flex justify-content-between align-items-center mb-3">
+    <h6>Q/A for <code>{{ filename }}</code></h6>
+    <a href="{{ url_for('download_csv', filename=filename) }}" class="btn btn-sm btn-success">⬇️ Download CSV</a>
+  </div>
+
+  <!-- Table Display -->
+  <div class="table-responsive">
+    {{ table | safe }}
+  </div>
+
+  <!-- Back Button -->
+  <a href="{{ url_for('index') }}" class="btn btn-sm btn-outline-secondary mt-3">Back</a>
+
+</body>
+</html>
