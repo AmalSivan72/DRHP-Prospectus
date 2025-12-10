@@ -11,6 +11,12 @@ def embed_chunks_optimal(
     output_pkl_path: str,
     model_path: str = r"C:\Users\2000166072\Documents\DRHP Prospectus\dhrp2\Embedding_model"
 ) -> List[Dict[str, Any]]:
+    
+    if os.path.exists(output_pkl_path):
+        logging.info(f"🔄 Embedded pickle found at {output_pkl_path}, loading...")
+        with open(output_pkl_path, "rb") as f:
+            chunks = pickle.load(f)
+        return chunks
     # Load chunks
     with open(input_pkl_path, "rb") as f:
         chunks = pickle.load(f)

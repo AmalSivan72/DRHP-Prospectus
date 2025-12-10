@@ -1,7 +1,7 @@
 import os, json, logging, re, pandas as pd
 
 from utility.helpers import load_local_model
-from services.core_logic_drhp import evaluate_with_gemini, get_chunks_with_fallback, parse_gemini_response
+from services.core_logic_drhp import evaluate_with_gemini,  get_chunks_with_fallback, parse_gemini_response
 from services.prompt_builder_drhp import build_llm_prompt_drhp
 from models import db
 from models.dhrp_entry import FundEvaluation   

@@ -7,14 +7,17 @@ import logging
 from typing import List, Dict, Any
 
 
-def chunk_text(text: str, chunk_size: int = 2000) -> List[str]:
+
+def chunk_text(text: str, chunk_size: int = 2000, overlap: int = 0) -> List[str]:
     chunks = []
     start = 0
+    step = chunk_size - overlap
     while start < len(text):
-        end = start + chunk_size
+        end = min(start + chunk_size, len(text))
         chunks.append(text[start:end])
-        start += chunk_size
+        start += step
     return chunks
+
 
 
 
@@ -61,6 +64,20 @@ def chunk_pdf_by_toc(
 ) -> List[Dict[str, Any]]:
 
     logging.info(f"📄 Starting chunking for PDF: {pdf_path}")
+
+    
+    
+    if os.path.exists(output_pkl_path):
+        logging.info(f"🔁 Output file already exists: {output_pkl_path}. Loading cached chunks...")
+        try:
+            with open(output_pkl_path, "rb") as f:
+                cached_chunks = pickle.load(f)
+            logging.info(f"✅ Loaded {len(cached_chunks)} chunks from cache.")
+            return cached_chunks
+        except Exception as e:
+            logging.warning(f"⚠️ Failed to load cache ({e}). Reprocessing PDF...")
+
+
 
     with open(toc_json_path, "r", encoding="utf-8") as f:
         toc_entries = json.load(f)

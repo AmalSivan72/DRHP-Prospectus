@@ -1,14 +1,16 @@
 import os, json, logging, pickle, pandas as pd
 from models import db
 from models.dhrp_entry import DhrpEntry
+
 from services.stream_csv_drhp_service import stream_csv_evaluation
-from services.taxonomy import load_taxonomy, map_toc_to_taxonomy, process_toc, toc_json_to_hierarchy
-from test.chunker1 import chunk_pdf_by_toc
-from utility.helpers import update_processing_stage, save_index, save_risk_summary_to_db
+
+
 
 from services.embedder import embed_chunks_optimal
 from services.risk_summary import generate_risk_summary_from_chunks
 
+from test.chunker1 import chunk_pdf_by_toc
+from utility.helpers import save_index, save_risk_summary_to_db, update_processing_stage
 
 BASE_DIR = os.getcwd()
 
@@ -23,7 +25,7 @@ def background_process_dhrp(app, base, entry):
 
             pdf_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
             toc_path = os.path.join('toc', f"{base}.json")
-            risk_path = os.path.join('risk_summary', f"{base}.json")
+            #risk_path = os.path.join('risk_summary', f"{base}.json")
             raw_pkl_path = os.path.join('pickles', f"{base}.pkl")
             embedded_pkl_path = os.path.join('pickles', f"{base}_embedded.pkl")
             csv_path = os.path.join('questions_csv', 'DHRP-Sample-v2.csv')
@@ -48,7 +50,6 @@ def background_process_dhrp(app, base, entry):
                 pd.DataFrame({"Question": fallback_questions}).to_csv(csv_path, index=False)
 
             # Processing pipeline
-            process_toc(base)
             update_processing_stage(base, "🔧 Chunking PDF by TOC")
             chunk_pdf_by_toc(pdf_path, toc_path, raw_pkl_path)
 
@@ -61,19 +62,19 @@ def background_process_dhrp(app, base, entry):
             with open(embedded_pkl_path, 'rb') as f:
                 embedded_chunks = pickle.load(f)
 
-            update_processing_stage(base, "🧠 Generating risk summary")
-            risk_text, summary_bullets, _ = generate_risk_summary_from_chunks(
-                chunks=embedded_chunks,
-                user_question="What are the key risk factors disclosed in the DHRP?",
-                search_intent="Search 'Risk Factors', 'Business Overview', and 'Management Discussion and Analysis' for risk-related disclosures.",
-                remarks="Focus on financial, operational, regulatory, and competitive risks. Include any mitigation strategies or gaps.",
-                cache_dir="cache"
-            )
+            # update_processing_stage(base, "🧠 Generating risk summary")
+            # risk_text, summary_bullets, _ = generate_risk_summary_from_chunks(
+            #     chunks=embedded_chunks,
+            #     user_question="What are the key risk factors disclosed in the DHRP?",
+            #     search_intent="Search 'Risk Factors', 'Business Overview', and 'Management Discussion and Analysis' for risk-related disclosures.",
+            #     remarks="Focus on financial, operational, regulatory, and competitive risks. Include any mitigation strategies or gaps.",
+            #     cache_dir="cache"
+            # )
 
-            update_processing_stage(base, "📝 Saving risk summary")
-            with open(risk_path, 'w', encoding='utf-8') as f:
-                json.dump({"summary_bullets": summary_bullets, "risk_text": risk_text}, f, indent=2)
-            save_risk_summary_to_db(base, risk_text, summary_bullets)
+            # update_processing_stage(base, "📝 Saving risk summary")
+            # with open(risk_path, 'w', encoding='utf-8') as f:
+            #     json.dump({"summary_bullets": summary_bullets, "risk_text": risk_text}, f, indent=2)
+            # save_risk_summary_to_db(base, risk_text, summary_bullets)
 
             update_processing_stage(base, "📊 Evaluating Q&A CSV")
             with open(index_path, 'r', encoding='utf-8') as f:

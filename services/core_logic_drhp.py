@@ -1,4 +1,5 @@
 import logging
+import math
 import os
 import re
 import textwrap
@@ -10,10 +11,11 @@ from typing import List, Dict, Any, Optional, Set, Tuple
 from sentence_transformers import SentenceTransformer
 import json
 import time 
-import math
 from services.azure_llm import AzureOpenAIClient
 from services.prompt_builder import build_llm_prompt_for_chunk_extraction
 from utility.helpers import load_local_model
+
+ 
 
 
 def cosine_similarity(a, b) -> float:
@@ -45,9 +47,12 @@ def normalize(value: Any) -> Optional[str]:
     s = str(value).strip().lower()
     if s in MISSING_SENTINELS:
         return None
-
+    s = re.sub(r"\bsection\b", "", s)
     s = re.sub(r"\s+", " ", s)       # collapse multiple spaces to one space
-    s = re.sub(r"[^\w\s]", "", s)    # remove punctuation, keep spaces
+    s = re.sub(r"[^\w\s]", "", s)
+    s = s.replace("_", " ")
+    s = re.sub(r"\b[ivxlcdm]+\b", "", s)
+    s = re.sub(r"\s+", " ", s).strip()
     return s
 
 def normalize_compact(value: Any) -> Optional[str]:
@@ -93,14 +98,18 @@ def match_subsection_regex(target_subsection: str, chunks: list, section: str = 
     if not target_subsection:
         return []
     target_norm = normalize(target_subsection)
+    target_parts = target_norm.split(" or ") if target_norm else []
     matched = []
     for chunk in chunks:
         sec_norm = normalize(chunk.get("section", ""))
         sub_norm = normalize(chunk.get("subsection", ""))
         if section and sec_norm != normalize(section):
             continue
-        if target_norm in sub_norm:   # normalized substring match
+
+        
+        if any(part in sub_norm for part in target_parts):  # normalized substring for any 'or' part
             matched.append(chunk)
+
     logging.info("Regex subsection match found %d chunks (target='%s')", len(matched), target_norm)
     return matched
 
@@ -146,51 +155,55 @@ def get_chunks_with_fallback(
     question: str,
     chunks: list,
     k: int = 10,
-    model_path: str = r"C:\Users\2000166072\Documents\DRHP Prospectus\dhrp2\Embedding_model",  
+    model_path: str = r"C:\Users\2000166072\Desktop\dhrp2\Embedding_model",
     section: str = None,
     subsection: str = None
 ) -> Tuple[List[Dict[str, Any]], str, str, int]:
     """
     Returns top-k chunks plus section/subsection info and raw match count.
-    Uses a local SentenceTransformer model by default.
+    Matching strategy:
+    1. Exact section + subsection match (normalized, substring allowed)
+    2. Regex fallback for subsection
+    3. Section-only fallback
     """
 
-    # Load local model with pooling dimension
+    # Load local model
     model = load_local_model(model_path, dim=768)
     logging.info("Embedding dimension: %d", model.get_sentence_embedding_dimension())
 
     # Encode query
     query_vector = model.encode([question])[0]
 
+    # Normalize inputs
     section_norm = normalize(section) if section else None
     subsection_norm = normalize(subsection) if subsection else None
 
     logging.info("Normalized CSV section='%s', subsection='%s'", section_norm, subsection_norm)
 
-    # 1️⃣ Exact normalized match
+    # ✅ 1. Exact/substring match for section + subsection
+    sub_parts = subsection_norm.split(" or ") if subsection_norm else []
     exact_filtered = [
-        c for c in chunks
-        if (section_norm is None or normalize(c.get("section", "")) == section_norm)
-        and (subsection_norm is None or normalize(c.get("subsection", "")) == subsection_norm)
-    ]
-    logging.info("Exact filter matched %d chunks", len(exact_filtered))
+    c for c in chunks
+    if (section_norm is None or normalize(c.get("section", "")) == section_norm)
+    and (
+        subsection_norm is None
+        or any(part in normalize(c.get("subsection", "")) for part in sub_parts)
+       )]
+
+    logging.info("Exact/substring filter matched %d chunks", len(exact_filtered))
     if exact_filtered:
-        top_k = score_and_return_top_k(query_vector, exact_filtered, k, context="section+subsection exact")
+        top_k = score_and_return_top_k(query_vector, exact_filtered, k, context="section+subsection exact/substring")
         return top_k, section or "", subsection or "", len(exact_filtered)
 
-    # 2️⃣ Regex/substring subsection match
+    # ✅ 2. Regex fallback using helper
     if subsection_norm:
-        regex_filtered = [
-            c for c in chunks
-            if (section_norm is None or normalize(c.get("section", "")) == section_norm)
-            and subsection_norm in normalize(c.get("subsection", ""))
-        ]
-        logging.info("Regex filter matched %d chunks", len(regex_filtered))
+        regex_filtered = match_subsection_regex(subsection, chunks, section)
+        logging.info("Regex fallback matched %d chunks", len(regex_filtered))
         if regex_filtered:
-            top_k = score_and_return_top_k(query_vector, regex_filtered, k, context="section+subsection regex")
+            top_k = score_and_return_top_k(query_vector, regex_filtered, k, context="regex fallback")
             return top_k, section or "", subsection or "", len(regex_filtered)
 
-    # 3️⃣ Section-only fallback
+    # ✅ 3. Section-only fallback
     if section_norm:
         section_filtered = [c for c in chunks if normalize(c.get("section", "")) == section_norm]
         logging.info("Section-only fallback matched %d chunks", len(section_filtered))
@@ -198,116 +211,64 @@ def get_chunks_with_fallback(
             top_k = score_and_return_top_k(query_vector, section_filtered, k, context="section-only fallback")
             return top_k, section, subsection, len(section_filtered)
 
+    # ✅ No match
     logging.warning(f"No chunks matched for question='{question}' (section={section}, subsection={subsection})")
     return [], section or "", subsection or "", 0
 
-def _collect_gemini_api_keys() -> List[Tuple[str, str]]:
-    keys = []
-
-    # Base key first (highest priority)
-    base_key = os.environ.get("GEMINI_API_KEY")
-    if base_key:
-        keys.append(("GEMINI_API_KEY", base_key))
-
-    # Collect numbered keys, sorted by suffix number (1..N)
-    numbered = []
-    for k, v in os.environ.items():
-        if k.startswith("GEMINI_API_KEY") and k != "GEMINI_API_KEY":
-            suffix = k[len("GEMINI_API_KEY"):]
-            if suffix.isdigit():
-                numbered.append((int(suffix), k, v))
-    numbered.sort(key=lambda x: x[0])
-
-    keys.extend((name, val) for _, name, val in numbered)
-
-    return keys
-
-
-def evaluate_with_gemini(
-    prompt: str,
-    cache_path: str,
-    max_retries: int = 3,
-    backoff_factor: int = 2,
-    request_timeout: int = 30
-) -> dict:
-    
-    api_keys = _collect_gemini_api_keys()
-    if not api_keys:
-        logging.error("No Gemini API keys found in environment. Set GEMINI_API_KEY or GEMINI_API_KEY1..N.")
-        return {"answer": "[API Error: missing GEMINI_API_KEY(s)]", "reasoning_steps": [], "validation_steps": []}
-
-    url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-live:generateContent"
+def evaluate_with_gemini(prompt: str, cache_path: str, max_retries: int = 3, backoff_factor: int = 2) -> dict:
+    """
+    Call Gemini API with retry logic.
+    Retries on 429 (rate limit) or 500-range errors using exponential backoff.
+    """
+    url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent"
+    headers = {
+        "Content-Type": "application/json",
+        "X-goog-api-key": os.environ.get("GEMINI_API_KEY", "AIzaSyATeJGWBSbWIC1TQs8F-GhwdWAkz2LoSHM")
+    }
     payload = {"contents": [{"parts": [{"text": prompt}]}]}
     summary_filename = os.path.basename(cache_path)
 
-    # Try each key in priority order
-    for idx, (env_name, api_key) in enumerate(api_keys, start=1):
-        logging.info("Using Gemini API key #%d (%s)", idx, env_name)
-        headers = {
-            "Content-Type": "application/json",
-            "X-goog-api-key": api_key,
-        }
+    for attempt in range(max_retries):
+        response = requests.post(url, headers=headers, json=payload)
 
-        # Attempt up to max_retries with exponential backoff
-        for attempt in range(max_retries):
+        # ✅ Success
+        if response.status_code == 200:
             try:
-                response = requests.post(url, headers=headers, json=payload, timeout=request_timeout)
-            except requests.RequestException as e:
-                wait = (backoff_factor ** attempt) + (0.25 * (attempt + 1))
-                logging.warning("Network/Request error with %s: %s (attempt %d/%d). Retrying in %.2fs...",
-                                env_name, str(e), attempt + 1, max_retries, wait)
-                time.sleep(wait)
-                continue
+                raw = response.json()["candidates"][0]["content"]["parts"][0]["text"].strip()
 
-            status = response.status_code
+                # Strip Markdown code block fencing
+                if raw.startswith("```json"):
+                    raw = raw[len("```json"):].strip()
+                if raw.endswith("```"):
+                    raw = raw[:-3].strip()
 
-            # ✅ Success
-            if status == 200:
-                try:
-                    data = response.json()
-                    raw = data["candidates"][0]["content"]["parts"][0]["text"].strip()
+                os.makedirs(os.path.dirname(cache_path), exist_ok=True)
+                with open(cache_path, "w", encoding="utf-8") as f:
+                    f.write(raw)
 
-                    # Strip Markdown code block fencing if present
-                    if raw.startswith("```json"):
-                        raw = raw[len("```json"):].strip()
-                    if raw.endswith("```"):
-                        raw = raw[:-3].strip()
+                print(f" Summary saved to: {summary_filename}")
+                return json.loads(raw)
+            except Exception as e:
+                print(" Failed to parse Gemini response:", response.text)
+                return {"answer": f"[JSON parsing error: {str(e)}]", "reasoning_steps": [], "validation_steps": []}
 
-                    os.makedirs(os.path.dirname(cache_path), exist_ok=True)
-                    with open(cache_path, "w", encoding="utf-8") as f:
-                        f.write(raw)
+        # ✅ Retry on 429 or 500-range
+        elif response.status_code == 429 or 500 <= response.status_code < 600:
+            wait = backoff_factor ** attempt
+            print(f" Gemini API error {response.status_code}: {response.text}")
+            print(f" Retrying in {wait} seconds (attempt {attempt+1}/{max_retries})...")
+            time.sleep(wait)
+            continue
 
-                    print(f" Summary saved to: {summary_filename}")
-                    return json.loads(raw)
+        # ❌ Non-retryable error
+        else:
+            print(f" Gemini API error {response.status_code}: {response.text}")
+            return {"answer": f"[API Error {response.status_code}]", "reasoning_steps": [], "validation_steps": []}
 
-                except Exception as e:
-                    # If parsing error, return gracefully
-                    logging.error("Failed to parse Gemini response with %s: %s\nRaw: %s",
-                                  env_name, str(e), response.text[:500])
-                    return {"answer": f"[JSON parsing error: {str(e)}]", "reasoning_steps": [], "validation_steps": []}
+    # ❌ Exhausted retries
+    return {"answer": "[API Error: retries exhausted]", "reasoning_steps": [], "validation_steps": []}
 
-            # ✅ Retry on 429 or 5xx
-            elif status == 429 or 500 <= status < 600:
-                # If 429 (rate limit/quota), likely key-specific; retry a couple times then rotate to next key
-                wait = (backoff_factor ** attempt) + (0.25 * (attempt + 1))  # small jitter
-                logging.warning("Gemini API error %d with %s: %s. Retrying in %.2fs (attempt %d/%d)...",
-                                status, env_name, response.text[:200], wait, attempt + 1, max_retries)
-                time.sleep(wait)
-                continue
 
-            # ❌ Non-retryable error (e.g., 400 bad request / auth issues)
-            else:
-                logging.error("Non-retryable Gemini API error %d with %s: %s",
-                              status, env_name, response.text[:200])
-                # Move to next key (if any)
-                break
-
-        # This key exhausted retries; rotate to next
-        logging.info("Key %s exhausted retries or non-retryable error; switching to next if available.", env_name)
-
-    # ❌ All keys failed
-    logging.error("All Gemini API keys failed or exhausted.")
-    return {"answer": "[API Error: all API keys exhausted]", "reasoning_steps": [], "validation_steps": []}
 
 
 def process_csv_and_evaluate(
@@ -437,3 +398,4 @@ def parse_gemini_response(summary: str) -> Dict[str, Any]:
         "reasoning_steps": reasoning,
         "validation_steps": validation
     }
+

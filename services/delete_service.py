@@ -11,9 +11,6 @@ def delete_document(doc: str):
     # Files to delete
     paths = [
         f"uploads/{base}.pdf",
-        f"pickles/{base}.pkl",
-        f"pickles/{base}_embedded.pkl",
-        f"toc/{base}.json",
         f"risk_summary/{base}.json",
         f"answered_csv/{base}_analysis.csv",
         f"status/{base}.json"  # ✅ status JSON
